@@ -24,4 +24,5 @@
       * [kth smallest numbers in unsorted array](chapter2-two-pointers/partition-array/quick-select/kth-smallest-numbers-in-unsorted-array.md)
       * [kth largest element](chapter2-two-pointers/partition-array/quick-select/kth-largest-element.md)
     * [Partition array by odd and even](chapter2-two-pointers/partition-array/partition-array-by-odd-and-even.md)
+    * [Interleaving positive and negative numbers](chapter2-two-pointers/partition-array/interleaving-positive-and-negative-numbers.md)
 
