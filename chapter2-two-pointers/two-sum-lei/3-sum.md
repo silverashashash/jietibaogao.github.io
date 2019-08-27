@@ -28,6 +28,55 @@ coding style上的优化：把find two sum封装一下，然后调用``self.find
 - -a=b+c, 循环a, 跳过等于a的值
 
 
+
+
+```py
+#自己的答案
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        
+        #a+b=-c
+        result = []
+        if not nums or len(nums) < 3:
+            return result
+        c_old = None
+        nums.sort()
+        
+        
+        for i in range(len(nums)-1,-1,-1):
+            left, right = 0, i - 1
+            if c_old == nums[i]:
+                continue
+            self.find_two_sum(nums, -nums[i], left, right, result)
+            c_old = nums[i]
+        return result
+
+    
+    def find_two_sum(self, nums, target, left, right, result):
+        if not nums or len(nums) < 3:
+            return None
+        # left, right = 0, len(nums) - 1
+        
+        while left < right:
+            if nums[left] + nums[right] == target:
+                while left < right and nums[left] == nums[left + 1]:
+                    left += 1
+                while left < right and nums[right] == nums[right - 1]:
+                    right -= 1
+
+                result.append([nums[left], nums[right], -target])
+                left, right = left + 1, right - 1
+            elif nums[left] + nums[right] < target:
+                left += 1
+            else:
+                right -= 1
+                
+        return result
+ 
+```
+
+
+
 错误点主要集中在去重上：
 1. [0,0,0,0,0]
 2. [-1,0,1,0]
