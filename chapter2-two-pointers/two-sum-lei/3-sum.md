@@ -45,8 +45,8 @@ class Solution:
         return n 
 ```
 
-- 调用``sort()``的时候用成``self.sort(nums)`` ``self.nums.sort()``了。``sort``是外部函数，可以直接调用。只有自己定义的函数才需要用``self``.
-- 刚开始超时了，原因是``nums[left]+nums[right]=target``那里最后忘记``left--``和``right++``，导致循环出不来
+- 调用``sort()``的时候用成``self.sort(nums)`` ``self.nums.sort()``了。``sort``是外部函数，可以直接调用。只有自己定义的函数才需要用``self``。
+- 刚开始超时了，原因是``nums[left]+nums[right]=target``那里最后忘记``left--``和``right++``，导致循环出不来。
 
 
 
