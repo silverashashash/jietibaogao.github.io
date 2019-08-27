@@ -14,8 +14,9 @@ print("\n通过reversed逆序遍历：")
 for i in reversed(a):
     print(i, end=" ")
 ```
+运行结果
 
-```
+```py
 通过下标逆序遍历1：
 9 8 6 3 1 
 通过下标逆序遍历2：
