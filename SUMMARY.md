@@ -27,4 +27,5 @@
     * [Interleaving positive and negative numbers](chapter2-two-pointers/partition-array/interleaving-positive-and-negative-numbers.md)
     * [Sort letters by case](chapter2-two-pointers/partition-array/sort-letters-by-case.md)
     * [Sort colors](chapter2-two-pointers/partition-array/sort-colors.md)
+    * [Rainbow sort](chapter2-two-pointers/partition-array/rainbow-sort.md)
 
