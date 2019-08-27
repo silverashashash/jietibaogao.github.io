@@ -3,6 +3,8 @@
 * [Introduction](README.md)
 * [Chapter0-常见corner case](chapter1.md)
   * [数组](chapter1/shu-zu.md)
+  * [python技巧](chapter1/pythonji-qiao.md)
+    * [逆序遍历](chapter1/pythonji-qiao/ni-xu-bian-li.md)
 * [Chapter1-Binary Search](chapter1-binary-search.md)
 * [Chapter2-Two Pointers](chapter2-two-pointers.md)
   * [Valid Palindrome](chapter2-two-pointers/valid-palindrome.md)

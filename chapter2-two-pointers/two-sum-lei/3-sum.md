@@ -24,7 +24,7 @@ A solution set is:
 
 coding style上的优化：把find two sum封装一下，然后调用``self.findtwosum()``
 ####思路：
-- a+b=-c, 且a<=b<=c, 循环c, 在c前面照a+b
+- a+b=-c, 且a<=b<=c, 循环c, 在c前面找a+b
 - -a=b+c, 循环a, 跳过等于a的值
 
 
