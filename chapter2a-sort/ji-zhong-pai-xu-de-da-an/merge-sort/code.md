@@ -1,8 +1,9 @@
-```
-# https://www.jiuzhang.com/solution/sort-integers/#tag-other-lang-python
-```
+
+
+merge sort code：
 
 ```py
+# https://www.jiuzhang.com/solution/sort-integers/#tag-other-lang-python
 class Solution:
     def sortIntegers(self, A):
         if A == None or len(A) == 0
@@ -44,6 +45,42 @@ class Solution:
             rightIndex += 1
         for index in range(start, end + 1):
             A[index] = tmp[index]
+```
+
+2
+
+```py
+# https://leetcode.com/problems/sort-an-array/discuss/276916/Python-bubble-insertion-selection-quick-merge-heap-objects
+
+def mergeSort(self, nums):
+    if len(nums) > 1:
+        mid = len(nums) // 2
+        L = nums[:mid]
+        R = nums[mid:]
+
+        self.mergeSort(L)
+        self.mergeSort(R)
+
+        i = j = k = 0
+
+        while i < len(L) and j < len(R):
+            if L[i] < R[j]:
+                nums[k] = L[i]
+                i += 1
+            else:
+                nums[k] = R[j]
+                j += 1
+            k += 1
+
+        while i < len(L):
+            nums[k] = L[i]:
+            i += 1
+            k += 1
+
+        while j < len(R):
+            nums[k] = R[j]
+            j += 1
+            k += 1
 ```
 
 
