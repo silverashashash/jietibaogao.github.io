@@ -22,4 +22,5 @@
   * [Partition Array](chapter2-two-pointers/partition-array.md)
     * [Quick select](chapter2-two-pointers/partition-array/quick-select.md)
       * [kth smallest numbers in unsorted array](chapter2-two-pointers/partition-array/quick-select/kth-smallest-numbers-in-unsorted-array.md)
+      * [kth largest element](chapter2-two-pointers/partition-array/quick-select/kth-largest-element.md)
 
