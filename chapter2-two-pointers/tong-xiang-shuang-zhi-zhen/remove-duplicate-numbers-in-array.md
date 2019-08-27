@@ -3,7 +3,7 @@
 #### Description
 
 Given an array of integers, how many three numbers can be found in the array, so that we can build an triangle whose three edges length is the three numbers that we find?  
-for 循环一个 c，再找出几个a+b&gt;c
+
 
 ### Example
 
@@ -31,3 +31,5 @@ So the answer is C(3, 4) = 4
 
 
 
+思路：for 循环一个 c，再找出几个a+b&gt;c
+如果要求去重，则需要$$O(n^3)$$暴力枚举法
