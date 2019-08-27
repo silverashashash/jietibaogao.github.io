@@ -21,4 +21,5 @@
     * [Two sum - difference equals to target](chapter2-two-pointers/two-sum-lei/two-sum-difference-equals-to-target.md)
   * [Partition Array](chapter2-two-pointers/partition-array.md)
     * [Quick select](chapter2-two-pointers/partition-array/quick-select.md)
+      * [kth smallest numbers in unsorted array](chapter2-two-pointers/partition-array/quick-select/kth-smallest-numbers-in-unsorted-array.md)
 
