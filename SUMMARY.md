@@ -28,4 +28,6 @@
     * [Sort letters by case](chapter2-two-pointers/partition-array/sort-letters-by-case.md)
     * [Sort colors](chapter2-two-pointers/partition-array/sort-colors.md)
     * [Rainbow sort](chapter2-two-pointers/partition-array/rainbow-sort.md)
+  * [其他各种排序](chapter2-two-pointers/qi-ta-ge-zhong-pai-xu.md)
+    * [pancake sort 烙饼排序](chapter2-two-pointers/qi-ta-ge-zhong-pai-xu/pancake-sort-luo-bing-pai-xu.md)
 
