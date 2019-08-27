@@ -15,5 +15,7 @@ coding style上的优化：把find two sum封装一下，然后用self.findtwosu
 
 ```
 
+- 调用``sort()``的时候用成``self.sort(nums)`` ``self.nums.sort()``了。``sort``是外部函数，可以直接调用。只有自己定义的函数才需要用``self``
+
 
 
