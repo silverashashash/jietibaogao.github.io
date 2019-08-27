@@ -39,4 +39,5 @@
     * [Window sum](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen/window-sum.md)
     * [Remove duplicate numbers in array](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen/remove-duplicate-numbers-in-array.md)
     * [Intersection of two linked list](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen/intersection-of-two-linked-list.md)
+    * [Linked list cycle](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen/linked-list-cycle.md)
 
