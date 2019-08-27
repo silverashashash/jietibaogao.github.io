@@ -35,4 +35,5 @@
     * [Bogo sort 猴子排序](chapter2-two-pointers/qi-ta-ge-zhong-pai-xu/bogo-sort-hou-zi-pai-xu.md)
   * [同向双指针](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen.md)
     * [Two sum difference](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen/two-sum-difference.md)
+    * [Move zeros](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen/move-zeros.md)
 
