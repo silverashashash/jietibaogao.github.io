@@ -22,7 +22,7 @@ A solution set is:
 
 最多$$O(n^2)$$种方案，不给sort可以用hashmap
 
-coding style上的优化：把find two sum封装一下，然后用``self.findtwosum()``调
+coding style上的优化：把find two sum封装一下，然后调用``self.findtwosum()``
 ####思路：
 - a+b=-c, 且a<=b<=c, 循环c, 在c前面照a+b
 - -a=b+c, 循环a, 跳过等于a的值
