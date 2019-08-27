@@ -10,7 +10,7 @@
   * [Two Sum 类](chapter2-two-pointers/two-sum-lei.md)
     * [Two Sum](chapter2-two-pointers/two-sum-lei/two-sum.md)
     * [Two Sum-II input array is sorted](chapter2-two-pointers/two-sum-lei/two-sum-input-array-is-sorted.md)
-    * [Two sum data structure design](chapter2-two-pointers/two-sum-lei/two-sum-data-structure-design.md)
+    * [Two Sum-III data structure design](chapter2-two-pointers/two-sum-lei/two-sum-data-structure-design.md)
     * [Two sum-unique pair](chapter2-two-pointers/two-sum-lei/two-sum-unique-pair.md)
     * [3 Sum](chapter2-two-pointers/two-sum-lei/3-sum.md)
     * [Triangle count](chapter2-two-pointers/two-sum-lei/triangle-count.md)
