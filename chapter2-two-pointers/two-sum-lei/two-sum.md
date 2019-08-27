@@ -24,7 +24,7 @@ class Solution:
         return [-1,-1]
 ```
 
-自己一开始是用two pointers，后来发现题目要求返回indices，所以看了答案知道要用hashmap。这题也是看了答案写出来的。需要复习。
+* 自己一开始是用two pointers，后来发现题目要求返回indices，所以看了答案知道要用hashmap。这题也是看了答案写出来的。需要复习。
 
 只有返回数值而非下标的时候才能先排序再用two pointers的方法做
 
