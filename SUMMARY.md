@@ -45,4 +45,6 @@
   * [几种排序的答案](chapter2a-sort/ji-zhong-pai-xu-de-da-an.md)
     * [Quick Sort](chapter2a-sort/ji-zhong-pai-xu-de-da-an/quick-sort.md)
       * [Code](chapter2a-sort/ji-zhong-pai-xu-de-da-an/quick-sort/code.md)
+    * [Merge Sort](chapter2a-sort/ji-zhong-pai-xu-de-da-an/merge-sort.md)
+      * [Code](chapter2a-sort/ji-zhong-pai-xu-de-da-an/merge-sort/code.md)
 
