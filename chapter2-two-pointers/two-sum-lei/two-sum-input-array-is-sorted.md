@@ -1,4 +1,4 @@
-## Two sum input array is sorted
+## Two Sum-II input array is sorted
 
 Given an array of integers that is already _**sorted in ascending order**_, find two numbers such that they add up to a specific target number.
 
