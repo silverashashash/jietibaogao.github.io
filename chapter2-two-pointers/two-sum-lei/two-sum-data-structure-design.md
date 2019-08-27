@@ -22,7 +22,7 @@ find(7) // return false
 | $$add()$$ | $$O(n)$$ 插入操作 | $$O(1)$$ |
 | $$find()$$ | $$O(n)$$ | $$O(n)$$ |
 
-add\(\)  是$$O(n)$$ 而非 $$O(logn)$$，因为出了维护这个有序数组要用到binary search之外，还有个insertion的操作，为$$O(n)$$。不能用linked list，因为linked list没有下标，因此无法进行binary search
+add\(\)  是$$O(n)$$ 而非 $$O(logn)$$，因为出了维护这个有序数组要用到binary search之外，还有个insertion的操作，为$$O(n)$$。不能用linked list，因为linked list没有下标访问的功能，因此无法进行binary search。所以用two pointers总有一种方法很慢。
 
 * add\(\)需要维护有序数组？
 
