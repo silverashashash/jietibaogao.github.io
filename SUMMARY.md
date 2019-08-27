@@ -37,4 +37,5 @@
     * [Two sum difference](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen/two-sum-difference.md)
     * [Move zeros](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen/move-zeros.md)
     * [Window sum](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen/window-sum.md)
+    * [Remove duplicate numbers in array](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen/remove-duplicate-numbers-in-array.md)
 
