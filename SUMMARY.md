@@ -18,4 +18,5 @@
     * [Two sum 计数：two sum greater than target](chapter2-two-pointers/two-sum-lei/two-sum-ji-shu-ff1a-two-sum-greaterthan-target.md)
     * [Two sum - closest to target](chapter2-two-pointers/two-sum-lei/two-sum-closest-to-target.md)
     * [4 Sum](chapter2-two-pointers/two-sum-lei/4-sum.md)
+    * [Two sum - difference equals to target](chapter2-two-pointers/two-sum-lei/two-sum-difference-equals-to-target.md)
 
