@@ -13,4 +13,5 @@
     * [Two sum data structure design](chapter2-two-pointers/two-sum-lei/two-sum-data-structure-design.md)
     * [Two sum-unique pair](chapter2-two-pointers/two-sum-lei/two-sum-unique-pair.md)
     * [3 Sum](chapter2-two-pointers/two-sum-lei/3-sum.md)
+    * [Triangle count](chapter2-two-pointers/two-sum-lei/triangle-count.md)
 
