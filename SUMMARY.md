@@ -10,4 +10,5 @@
   * [Two Sum 类](chapter2-two-pointers/two-sum-lei.md)
     * [Two Sum](chapter2-two-pointers/two-sum-lei/two-sum.md)
     * [Two sum input array is sorted](chapter2-two-pointers/two-sum-lei/two-sum-input-array-is-sorted.md)
+    * [Two sum data structure design](chapter2-two-pointers/two-sum-lei/two-sum-data-structure-design.md)
 
