@@ -47,4 +47,5 @@
       * [Code](chapter2a-sort/ji-zhong-pai-xu-de-da-an/quick-sort/code.md)
     * [Merge Sort](chapter2a-sort/ji-zhong-pai-xu-de-da-an/merge-sort.md)
       * [Code](chapter2a-sort/ji-zhong-pai-xu-de-da-an/merge-sort/code.md)
+  * [几种排序的比较](chapter2a-sort/ji-zhong-pai-xu-de-bi-jiao.md)
 
