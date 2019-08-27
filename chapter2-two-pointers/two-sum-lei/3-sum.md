@@ -10,12 +10,11 @@
 coding style上的优化：把find two sum封装一下，然后用self.findtwosum\(\)调用
 
 
+$$
+首都发生的
+$$
 
 
-```py
-#自己的代码
-
-```
 
 
 
