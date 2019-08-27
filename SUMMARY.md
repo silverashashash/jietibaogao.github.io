@@ -30,4 +30,9 @@
     * [Rainbow sort](chapter2-two-pointers/partition-array/rainbow-sort.md)
   * [其他各种排序](chapter2-two-pointers/qi-ta-ge-zhong-pai-xu.md)
     * [pancake sort 烙饼排序](chapter2-two-pointers/qi-ta-ge-zhong-pai-xu/pancake-sort-luo-bing-pai-xu.md)
+    * [sleep sort 睡眠排序](chapter2-two-pointers/qi-ta-ge-zhong-pai-xu/sleep-sort-shui-mian-pai-xu.md)
+    * [spaghetti sort 面条排序](chapter2-two-pointers/qi-ta-ge-zhong-pai-xu/spaghetti-sort-mian-tiao-pai-xu.md)
+    * [Bogo sort 猴子排序](chapter2-two-pointers/qi-ta-ge-zhong-pai-xu/bogo-sort-hou-zi-pai-xu.md)
+  * [同向双指针](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen.md)
+    * [Two sum difference](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen/two-sum-difference.md)
 
