@@ -8,4 +8,5 @@
   * [Valid Palindrome](chapter2-two-pointers/valid-palindrome.md)
     * [Valid Palindrome II](chapter2-two-pointers/valid-palindrome/valid-palindrome-ii.md)
   * [Two Sum 类](chapter2-two-pointers/two-sum-lei.md)
+    * [Two Sum](chapter2-two-pointers/two-sum-lei/two-sum.md)
 
