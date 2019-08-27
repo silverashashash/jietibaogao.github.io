@@ -42,4 +42,7 @@
     * [Linked list cycle](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen/linked-list-cycle.md)
       * Linked list cycle II
 * [Chapter2a-Sort](chapter2a-sort.md)
+  * [几种排序的答案](chapter2a-sort/ji-zhong-pai-xu-de-da-an.md)
+    * [Quick Sort](chapter2a-sort/ji-zhong-pai-xu-de-da-an/quick-sort.md)
+      * [Code](chapter2a-sort/ji-zhong-pai-xu-de-da-an/quick-sort/code.md)
 
