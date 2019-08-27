@@ -22,7 +22,8 @@ find(7) // return false
 | $$add()$$ | $$O(n)$$ 插入操作 | $$O(1)$$ |
 | $$find()$$ | $$O(n)$$ | $$O(n)$$ |
 
-add\(\)需要维护有序数组的话，是$$O(n)$$ 而非 $$O(logn)$$，因为出了维护这个有序数组要用到binary search之外，还有个insertion的操作，为$$O(n)$$。也不能用linked list，因为linked list没有下标访问的功能，因此无法进行binary search。所以用two pointers总有一种方法很慢。用hashmap的话add()不用排序，
+add\(\)需要维护有序数组的话，是$$O(n)$$ 而非 $$O(logn)$$，因为出了维护这个有序数组要用到binary search之外，还有个insertion的操作，为$$O(n)$$。也不能用linked list，因为linked list没有下标访问的功能，因此无法进行binary search。所以用two pointers总有一种方法很慢。用hashmap的话add()不用排序。
+- 这题表达的是不可能存在一种方法既维护了有序数组，又在很快的时间内查找
 
 问题：add和find调用不一样多时用什么方法？
 
