@@ -20,4 +20,5 @@
     * [4 Sum](chapter2-two-pointers/two-sum-lei/4-sum.md)
     * [Two sum - difference equals to target](chapter2-two-pointers/two-sum-lei/two-sum-difference-equals-to-target.md)
   * [Partition Array](chapter2-two-pointers/partition-array.md)
+    * [Quick select](chapter2-two-pointers/partition-array/quick-select.md)
 
