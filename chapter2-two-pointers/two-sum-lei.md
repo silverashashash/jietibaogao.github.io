@@ -3,7 +3,7 @@
 |  | Time Complexity | Space Complexity |
 | :--- | :--- | :--- |
 | Hash | O\(n\) | O\(n\) |
-| Two Pointers | O\(logn\) 要先排序 | O\(1\) |
+| Two Pointers | O\(nlogn\) 要先排序 | O\(1\) |
 
 Two sum  这题要求的是返回满足条件的两个值，这是不需要额外空间的。
 
