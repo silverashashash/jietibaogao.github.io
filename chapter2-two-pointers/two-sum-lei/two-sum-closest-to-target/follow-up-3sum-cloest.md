@@ -11,6 +11,7 @@ The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 
 ```
 
+- 思路应该和2Sum closet差不多
   
 
 
