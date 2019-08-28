@@ -93,4 +93,4 @@ class Solution:
     - R往左一格再会循环开头判断-->**这里卡在这里！**
 - 当l+R<=I时：
     - L往右移动一格
-
+- 注意用two pointers 时别玩了先sort一下
