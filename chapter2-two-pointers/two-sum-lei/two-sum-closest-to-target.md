@@ -36,5 +36,42 @@ Do it in O\(nlogn\) time complexity.
 
 
 
+
+```py
+class Solution:
+    """
+    @param nums: an integer array
+    @param target: An integer
+    @return: the difference between the sum and the target
+    """
+    def twoSumClosest(self, nums, target):
+        # write your code here
+        
+        if not nums or len(nums) < 2:
+            return None
+            
+        nums.sort()
+        # diff 
+        
+        l, r = 0, len(nums) - 1 
+        diff = abs(nums[l]+nums[r]-target)
+        
+        while l + 1 < r:
+            if l + 1 < r  and nums[l] + nums[r] > target:
+                r -= 1
+                diff = min(abs(nums[l]+nums[r]-target),diff)
+            elif l + 1< r  and nums[l] + nums[r] < target:
+                l += 1
+                diff = min(abs(nums[l]+nums[r]-target),diff)
+            else:
+                return 0
+        return diff
+
+```
+
+自己的思路是两个指针相向而行，每次移动指针都计算一下sum和target之差，一旦符号变换则换另一个指针。因为时排序数组，所以sum-target的最小值肯定出现在正负号变换的时候。
+
 - 错误点1: left 和right总有机会相交，也就是left == right的情况，怎么排除掉？如果用left + 1 < right， 则会run out of time。 
+    - 解决办法：用二分法模板里的start + 1 < end
+- 错误点2: 一开始我认为循环退出时左右两指针的位置就是sum-target最小值的位置。实际上循环退出的条件是left和right相遇，所以最小值出现在其中某次符号变换的时候，而不是最后一次或者left和right相遇的时候。
 
