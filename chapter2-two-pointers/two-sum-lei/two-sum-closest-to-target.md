@@ -73,5 +73,5 @@ class Solution:
 
 - 错误点1: left 和right总有机会相交，也就是left == right的情况，怎么排除掉？如果用left + 1 < right， 则会run out of time。 
     - 解决办法：用二分法模板里的start + 1 < end
-- 错误点2: 一开始我认为循环退出时左右两指针的位置就是sum-target最小值的位置。实际上循环退出的条件是left和right相遇，所以最小值出现在其中某次符号变换的时候，而不是最后一次或者left和right相遇的时候。
+- 错误点2: 一开始我认为循环退出时左右两指针的位置就是sum-target最小值的位置。实际上循环退出的条件是left和right相遇，所以最小值出现在其中某次符号变换的时候，而不是最后一次或者left和right相遇的时候。所以每次移动指针都要记录下一个最小值。
 
