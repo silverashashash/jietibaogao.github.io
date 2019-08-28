@@ -11,7 +11,7 @@ The function twoSum should return indices of the two numbers such that they add 
 
 **使用 two pointers而不用hashmap是因为前者更快。**
 
-开辟额外空间也需要时间, sorted array 的话 时间复杂度就是$$O(n)$$了
+开辟额外空间也需要时间, sorted array 的话用two pointers时间复杂度就是$$O(n)$$了
 
 |  | Time Complexity | Space Complexity |
 | :--- | :--- | :--- |
