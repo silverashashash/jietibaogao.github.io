@@ -4,12 +4,12 @@
 
 如果要求去重，则$$O(n^3)$$ 暴力方法
 
-
-- 这道题比我想象的还费时间。原因是用two pointers的时候突然不知道该怎么去重了，一不小心就去掉正确答案了
+* 这道题比我想象的还费时间。原因是用two pointers的时候突然不知道该怎么去重了，一不小心就去掉正确答案了
 
 最后看了答案：
 
 答案1
+
 ```py
 class Solution:
     """
@@ -18,7 +18,7 @@ class Solution:
     """
     def triangleCount(self, S):
         S.sort()
-        
+
         ans = 0
         for i in range(len(S)):
             left, right = 0, i - 1
@@ -29,10 +29,9 @@ class Solution:
                 else:
                     left += 1
         return ans
-
 ```
-答案2
 
+答案2
 
 ```py
 class Solution:
@@ -54,6 +53,41 @@ class Solution:
         return sum
 ```
 
+自己的错误答案：
+
+```py
+class Solution:
+    """
+    @param S: A list of integers
+    @return: An integer
+    """
+    def triangleCount(self, S):
+        # write your code here
+        if not S or len(S) < 3:
+            return 0
+        
+        n = 0
+        
+        S.sort()
+        # left, right = 0, len(S) - 1 
+        
+        for i in range(len(S)-1,-1,-1):
+            left, right = 0, i - 1 
+            if left < right and S[left] + S[right] > S[i]:
+                n += (right - left)
+                for j in range(left,right):
+                    if  S[left] + S[j] > S[i]:
+                        n += (j - left)
+                    else:
+                        left += 1 
+                    
+            else: #S[left] + S[right] <= S[i]
+                left += 1 
+            
+        return n 
+                 
+                
+```
 
 
 
