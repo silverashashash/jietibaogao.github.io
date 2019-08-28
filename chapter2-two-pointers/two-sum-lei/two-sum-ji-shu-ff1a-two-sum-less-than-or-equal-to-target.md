@@ -15,14 +15,13 @@ Explanation:
 2 + 15 < 24
 7 + 11 < 24
 7 + 15 < 24
-
 ```
 
 Example 2:
 
 ```
 Input: nums = [1], target = 1. 
-Output: 0. 
+Output: 0.
 ```
 
 
