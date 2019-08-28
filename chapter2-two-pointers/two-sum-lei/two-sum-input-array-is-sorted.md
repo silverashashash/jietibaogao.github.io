@@ -16,7 +16,7 @@ The function twoSum should return indices of the two numbers such that they add 
 |  | Time Complexity | Space Complexity |
 | :--- | :--- | :--- |
 | Hash | $$O(n)$$ | $$O(n)$$ |
-| Two Pointers | $$O(logn)$$ 要先排序 | $$O(1)$$ |
+| Two Pointers | $$O(nlogn)$$ 要先排序 | $$O(1)$$ |
 
 ```py
 #自己的答案：
