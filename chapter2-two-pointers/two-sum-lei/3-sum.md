@@ -89,6 +89,7 @@ class Solution:
 
 总结一下去重容易出错的地方：
 - target去重
+    - 我的办法是多加一个参数记录上一个target的值，实际上不需要这么做，直接在循环c的时候就可以去重，相同的跳过
 - a,b组合去重-unique pairs
 
 
