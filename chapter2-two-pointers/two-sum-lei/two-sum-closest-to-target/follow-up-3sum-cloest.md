@@ -89,7 +89,7 @@ class Solution:
 
 
 
-```
+```py
 #leetcode上
 class Solution:
     # @return an integer
