@@ -29,6 +29,7 @@ Output: 0.
 
 
 ```py
+#自己的答案（和九章的差不多）
 class Solution:
     """
     @param nums: an array of integer
