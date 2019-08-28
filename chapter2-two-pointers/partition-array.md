@@ -2,7 +2,8 @@
 
 partition 是 in place的，in place = no extra space = constant space
 
-partition 模版![](/assets/Screen Shot 2019-08-22 at 3.13.53 PM.png)
+###partition 模版
+![](/assets/Screen Shot 2019-08-22 at 3.13.53 PM.png)
 
 左右两边分别找到相应的数并交换
 
@@ -12,9 +13,11 @@ partition 模版![](/assets/Screen Shot 2019-08-22 at 3.13.53 PM.png)
 
 这个代码用到quicksort的问题是要quicksort把等于pivot的情况单独拿出来讨论，是为了避免在数组元素一样时，退化成$$O(n^2)$$
 
-* quicksort, A\[i\] == pivot时哪都不属于![](/assets/Screen Shot 2019-08-22 at 3.33.31 PM.png)
+* quicksort, ``A[i] == pivot``时哪都不属于
+![](/assets/Screen Shot 2019-08-22 at 3.33.31 PM.png)
 
-* partition，A\[i\]==pivot时属于右侧![](/assets/Screen Shot 2019-08-22 at 3.34.51 PM.png)
+* partition，``A[i]==pivot``时属于右侧
+![](/assets/Screen Shot 2019-08-22 at 3.34.51 PM.png)
 
 
 
