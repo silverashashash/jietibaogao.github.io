@@ -1,6 +1,6 @@
 ## 4 sum
 
-Given an array`nums`of_n_integers and an integer`target`, are there elements_a_,_b_,_c_, and_d_in`nums`such that_a_+_b_+_c_+_d_=`target`? Find all unique quadruplets in the array which gives the sum of`target`.
+Given an array`nums`of _n_ integers and an integer `target`, are there elements _a_,_b_,_c_, and_d_in  `nums` such that _a_+_b_+_c_+_d_=`target`? Find all unique quadruplets in the array which gives the sum of`target`.
 
 **Note:**
 
@@ -17,11 +17,7 @@ A solution set is:
   [-2, -1, 1, 2],
   [-2,  0, 0, 2]
 ]
-
 ```
-
-  
-
 
 
 
