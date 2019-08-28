@@ -29,3 +29,9 @@ Given an array`nums`of integers and an int`k`, partition the array \(i.e move th
 
 Return the partitioning index, i.e the first index i nums[i] >=k.
 
+####Notice
+You should do really partition in array nums instead of just counting the numbers of integers smaller than k.
+
+If all elements in nums are smaller than k, then return nums.length
+
+
