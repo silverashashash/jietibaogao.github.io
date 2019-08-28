@@ -90,7 +90,7 @@ class Solution:
         return left, right
 ```
 
-* two\_pointer\(\): 遇到左右不同时返回左右下标
+* two\_pointer\(\): 返回左右下标, 遇到左右不通时终止移动指针。
 * is\_palindrome\(\): s\[left:right\] 是否是palindrome
 * 利用了python可以同时返回两个值的特性
 * 另外要注意，**如果一个字符是回文串，那么while结束后要么left==right（奇数个字符），要么left&gt;right（偶数个字符）。**这是two\_pointer的运行结果之一。
