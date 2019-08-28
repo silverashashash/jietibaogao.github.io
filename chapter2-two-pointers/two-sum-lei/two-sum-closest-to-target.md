@@ -31,7 +31,10 @@ The minimum difference is 6. (4 - (- 1 - 1) = 6).
 Do it in O\(nlogn\) time complexity.
 
 * 用一个数去记录difference
+- 这也是研究两个变量如何组合的问题，循环其中一个变量，研究另一个的变化
+6
 
 
 
+- 错误点1: left 和right总有机会相交，也就是left == right的情况，怎么排除掉？如果用left + 1 < right， 则会run out of time。 
 
