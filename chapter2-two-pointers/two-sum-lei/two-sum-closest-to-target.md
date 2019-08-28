@@ -75,3 +75,31 @@ class Solution:
     - 解决办法：用二分法模板里的start + 1 < end
 - 错误点2: 一开始我认为循环退出时左右两指针的位置就是sum-target最小值的位置。实际上循环退出的条件是left和right相遇，所以最小值出现在其中某次符号变换的时候，而不是最后一次或者left和right相遇的时候。所以每次移动指针都要记录下一个最小值。
 
+
+
+```
+#九章答案：
+class Solution:
+    """
+    @param nums: an integer array
+    @param target: An integer
+    @return: the difference between the sum and the target
+    """
+    def twoSumClosest(self, nums, target):
+        nums.sort()
+        i, j = 0, len(nums)  - 1
+
+        diff = sys.maxsize
+        while i < j:
+            if nums[i] + nums[j] < target:
+                diff = min(diff, target - nums[i] - nums[j])
+                i += 1
+            else:
+                diff = min(diff, nums[i] + nums[j] - target)
+                j -= 1
+
+        return diff
+```
+
+
+
