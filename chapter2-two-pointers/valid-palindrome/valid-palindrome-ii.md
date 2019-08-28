@@ -17,7 +17,7 @@ Given a non-empty string`s`, you may delete at most one character. Judge whether
 * 出错点1: 只能删掉一个字符。一开始写的程序是while里会不停删掉，直到变成palindrome为止
   * 自己的解决办法是加了一个参数n，记录跳过的次数
 * 出错点2: 出现一种情况："cupuaupucu" 删掉最左边那个和最右边那个都能满足删掉后指向的两个字符相同，但是只有删掉右边那个才满足题意。一开始写的程序是执行删掉左边的操作，这导致了结果是false 。
-  * 自己的解决办法是写了一个ispalindrome的函数判断首尾数组是否是回文。
+  * 自己的解决办法是写了一个isPalindrome的函数判断首尾数组是否是回文。
 * 出错点3: "acba" 这种情况也报错了，原因是第一步判断s\[l\]==s\[r\]的时候写成isPalindrome\(s,left,right\)了
 * 出错点4: 一开始把right=len\(s\)-1 写成right=len\(s\)了导致数组越界
 
