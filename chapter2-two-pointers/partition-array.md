@@ -42,6 +42,7 @@ If all elements in nums are smaller than k, then return nums.length
 ```
 
 - partition做起来很简单，但是循环出来判断返回值的时候一直出错，直到我看到Notice里写的**If all elements in nums are smaller than k, then return nums.length**...
+- 另一个错误的地方是，partition的``A[i] == pivot``的情况是属于右侧的，而quicksort是谁都不属于。如果没注意到这点写成quicksort的形式，就会导致出现``A[i]==pivot``时if特别复杂
 
 
 
