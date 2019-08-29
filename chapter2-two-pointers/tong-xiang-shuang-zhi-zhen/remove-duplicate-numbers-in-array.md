@@ -1,4 +1,12 @@
 ## Remove duplicate numbers in array
+####Description
+Given an array of integers, remove the duplicate numbers in it.
+
+You should:
+
+1. Do it in place in the array.
+2. Move the unique numbers to the front of the array.
+3. Return the total number of the unique numbers.
 
 
 ####随课教程
@@ -8,6 +16,14 @@
 
 
 ####hash 法
+
+
+
+
+```py
+
+```
+
 
 
 
