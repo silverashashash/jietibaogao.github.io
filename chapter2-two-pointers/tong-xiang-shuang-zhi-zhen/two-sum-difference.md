@@ -98,3 +98,7 @@ print(sorted(listC, key=lambda x: x[1]))
 #结果三
 [('l', 1), ('o', 2), ('v', 3), ('e', 4), ('!', 5)]
 ```
+
+###python中的枚举函数 enumerate()
+http://www.runoob.com/python/python-func-enumerate.html
+
