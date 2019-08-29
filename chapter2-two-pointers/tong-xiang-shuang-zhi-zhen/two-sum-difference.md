@@ -37,7 +37,7 @@ Explanation:
 
 
 ```py
-#九章答案，用了lambda函数
+#九章答案，用了lambda函数（匿名函数）
 class Solution:
     """
     @param nums {int[]} n array of Integer
