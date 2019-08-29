@@ -1,8 +1,44 @@
 ## Triangle count
 
-如果是求具体方案，理论上$$O(C^3_n)=O(n^3)$$ 。但本题是找方案总数
+#### Description
 
-如果要求去重，则$$O(n^3)$$ 暴力方法
+Given an array of integers, how many three numbers can be found in the array, so that we can build an triangle whose three edges length is the three numbers that we find?  
+
+
+### Example
+
+**Example 1:**
+
+```
+Input: [3, 4, 6, 7]
+Output: 3
+Explanation:
+They are (3, 4, 6), 
+         (3, 6, 7),
+         (4, 6, 7)
+
+```
+
+**Example 2:**
+
+```
+Input: [4, 4, 4, 4]
+Output: 4
+Explanation:
+Any three numbers can form a triangle. 
+So the answer is C(3, 4) = 4
+```
+
+
+思路：``for``循环一个 ``c``，再找出几个``a+b>c``
+如果要求列出具体方案，理论上$$O(C_n^3)=O(n^3)$$.但本题是找方案总数
+
+
+如果要求去重，则需要$$O(n^3)$$暴力枚举法
+
+
+
+
 
 * 这道题比我想象的还费时间。原因是用two pointers的时候突然不知道该怎么去重了，一不小心就去掉正确答案了
 
@@ -88,9 +124,9 @@ class Solution:
                  
                 
 ```
-- 当L+R>I时：
-    - L往右移动的左右组合都满足：ans += r - l
+- 当``L+R>I``时：
+    - L往右移动的左右组合都满足：``ans += r - l``
     - R往左一格再会循环开头判断-->**这里卡在这里！**
-- 当l+R<=I时：
+- 当``L+R<=I``时：
     - L往右移动一格
-- 注意用two pointers 时别玩了先sort一下
+- 注意用two pointers 时别忘了先sort一下
