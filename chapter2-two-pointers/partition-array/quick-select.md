@@ -16,8 +16,8 @@
 ```
 #Time Complexity：
 T(n) = O(n) + T(n/2)
-       O(n):partition
-       T(n/2):第k个再pivot左半边/右半边（理想情况二分）
+       # O(n):partition
+       # T(n/2):第k个再pivot左半边/右半边（理想情况二分）
      = O(n)+O(n/2)+...+O(1)
      = O(n)
 ```
