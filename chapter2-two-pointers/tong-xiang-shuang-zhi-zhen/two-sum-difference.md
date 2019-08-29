@@ -126,3 +126,25 @@ enumerate(sequence, [start=0])
 >>>list(enumerate(seasons, start=1))       # 下标从 1 开始
 [(1, 'Spring'), (2, 'Summer'), (3, 'Fall'), (4, 'Winter')]
 ```
+```py
+#普通的 for 循环
+>>>i = 0
+>>> seq = ['one', 'two', 'three']
+>>> for element in seq:
+...     print i, seq[i]
+...     i +=1
+... 
+0 one
+1 two
+2 three
+```
+```py
+#循环使用 enumerate
+>>>seq = ['one', 'two', 'three']
+>>> for i, element in enumerate(seq):
+...     print i, element
+... 
+0 one
+1 two
+2 three
+```
