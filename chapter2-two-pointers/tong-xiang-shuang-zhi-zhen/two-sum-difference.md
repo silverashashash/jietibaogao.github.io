@@ -148,3 +148,7 @@ enumerate(sequence, [start=0])
 1 two
 2 three
 ```
+本题的方法，给下标添加进list
+```py
+nums = [(num, i) for i, num in enumerate(nums)]
+```
