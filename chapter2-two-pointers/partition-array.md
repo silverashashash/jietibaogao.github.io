@@ -24,14 +24,24 @@ partition 是 in place的，in place = no extra space = constant space
 
 Given an array`nums`of integers and an int`k`, partition the array \(i.e move the elements in "nums"\) such that:
 
-* All elements &lt;_k _are moved to the _left_
-* All elements &gt;=_k _are moved to the _right_
+* All elements ``<k`` are moved to the _left_
+* All elements ``>=k ``are moved to the _right_
 
-Return the partitioning index, i.e the first index i nums[i] >=k.
+Return the partitioning index, i.e. the first index i ``nums[i] >=k``.
 
 ####Notice
 You should do really partition in array nums instead of just counting the numbers of integers smaller than k.
 
 If all elements in nums are smaller than k, then return nums.length
+
+
+
+
+
+```py
+```
+
+- partition做起来很简单，但是循环出来判断返回值的时候一直出错，直到我看到Notice里写的**If all elements in nums are smaller than k, then return nums.length**...
+
 
 
