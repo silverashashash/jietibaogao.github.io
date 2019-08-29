@@ -36,9 +36,9 @@ If all elements in nums are smaller than k, then return nums.length
 
 
 
-
-
 ```py
+# 自己的答案
+
 ```
 
 - 错误点1: partition做起来很简单，但是循环出来判断返回值的时候一直出错，直到我看到Notice里写的**If all elements in nums are smaller than k, then return nums.length**...
