@@ -51,3 +51,4 @@ class Solution:
         return result
 ```
 
+-  要注意循环是从1开始，并且比较的是``nums[i]``和``nums[i - 1]``
