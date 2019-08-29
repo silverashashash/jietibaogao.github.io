@@ -45,9 +45,10 @@
       * [followup: Move zeros II](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen/move-zeros/followupmove-zero-ii.md)
     * [Window sum](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen/window-sum.md)
     * [Remove duplicate numbers in array](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen/remove-duplicate-numbers-in-array.md)
-    * [Intersection of two linked list](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen/intersection-of-two-linked-list.md)
+    * [Middle of a linked list](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen/middle-of-a-linked-list.md)
     * [Linked list cycle](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen/linked-list-cycle.md)
       * Linked list cycle II
+    * [Intersection of two linked list](chapter2-two-pointers/tong-xiang-shuang-zhi-zhen/intersection-of-two-linked-list.md)
 * [Chapter2a-Sort](chapter2a-sort.md)
   * [几种排序的答案](chapter2a-sort/ji-zhong-pai-xu-de-da-an.md)
     * [Quick Sort](chapter2a-sort/ji-zhong-pai-xu-de-da-an/quick-sort.md)
