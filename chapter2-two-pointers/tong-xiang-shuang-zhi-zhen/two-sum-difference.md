@@ -101,4 +101,15 @@ print(sorted(listC, key=lambda x: x[1]))
 
 ###python中的枚举函数 enumerate()
 http://www.runoob.com/python/python-func-enumerate.html
+####描述
+``enumerate()`` 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在``for``循环当中。
+
+Python 2.3. 以上版本可用，2.6 添加``start```参数。
+
+####语法
+以下是``enumerate()``方法的语法:
+```py
+enumerate(sequence, [start=0])
+```
+
 
