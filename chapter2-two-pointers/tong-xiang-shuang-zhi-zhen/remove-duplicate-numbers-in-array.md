@@ -27,3 +27,27 @@ You should:
 
 
 ####两个指针
+
+
+
+```py
+# O(nlogn) time, O(1) extra space
+class Solution:
+    # @param {int[]} nums an array of integers
+    # @return {int} the number of unique integers
+    def deduplication(self, nums):
+        # Write your code here
+        n = len(nums)
+        if n == 0:
+            return 0
+            
+        nums.sort()
+        result = 1
+        for i in range(1, n):
+            if nums[i - 1] != nums[i]:
+                nums[result] = nums[i]
+                result += 1
+                
+        return result
+```
+
