@@ -35,3 +35,11 @@ Explanation: If the length of list is  even return the value of center left one.
 快指针每次两步，慢指针每次一步。  
 快指针到尾的时候，慢指针就是中点。
 
+
+
+
+```
+#linked list还不太会用，所以这里抄一下九章的答案
+
+```
+
