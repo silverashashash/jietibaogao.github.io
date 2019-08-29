@@ -32,7 +32,7 @@ Explanation:
 * 因为是减法，注意绝对值的问题
 
 ```py
-#九章答案，用了lambda函数（匿名函数）和enumerate函数
+#九章答案，用了lambda函数（匿名函数）和enumerate函数(枚举函数）
 class Solution:
     """
     @param nums {int[]} n array of Integer
