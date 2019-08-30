@@ -31,8 +31,6 @@ Explanation:
 * 按九章的思路，用双指针的话，先对数组进行了排序，因此需要记录原本的下标
 * 因为是减法，注意绝对值的问题
 
-
-
 ```py
 #我的答案（总是有错误）
 class Solution:
@@ -45,13 +43,13 @@ class Solution:
         # write your code here
         if not nums or len(nums) < 2:
             return []
-        
+
         nums = [(num, i) for i, num in enumerate(nums)]
-        
+
         nums = sorted(nums, key = lambda x : x[0])
         print(nums)
-        
-        
+
+
         for j in range(1, len(nums)):
             i = 0
             print("i=",i)
@@ -63,14 +61,12 @@ class Solution:
                     i += 1
                 else:
                     continue
-        
+
         return []
 ```
 
-
-- 错误1
-- 错误2
-
+* 错误1：sort 过后index会乱，所以要思考如何让输出的index1&lt;index2
+* 错误2：
 
 ```py
 #九章答案，用了lambda函数（匿名函数）和enumerate函数(枚举函数）
@@ -85,7 +81,7 @@ class Solution:
         nums = [(num, i) for i, num in enumerate(nums)]
         target = abs(target)    
         n, indexs = len(nums), []
-    
+
         nums = sorted(nums, key=lambda x: x[0])
 
         j = 0
@@ -107,18 +103,15 @@ class Solution:
 
 [https://blog.csdn.net/u010758410/article/details/79737498](https://blog.csdn.net/u010758410/article/details/79737498)
 
+当待排序列表的元素由多字段构成时，我们可以通过sorted\(iterable，key，reverse\)的参数key来制定我们根据那个字段对列表元素进行排序。
 
+`key=lambda 元素: 元素[字段索引]`
 
-当待排序列表的元素由多字段构成时，我们可以通过sorted\(iterable，key，reverse\)的参数key来制定我们根据那个字段对列表元素进行排序。 
+例如：想对元素第二个字段排序，则
 
-`key=lambda 元素: 元素[字段索引] `
-
-例如：想对元素第二个字段排序，则 
-
-`key=lambda y: y[1] 备注：这里y可以是任意字母，等同key=lambda x: x[1] `
+`key=lambda y: y[1] 备注：这里y可以是任意字母，等同key=lambda x: x[1]`
 
 看几个简单的例子。
-
 
 ```py
 listA = [3, 6, 1, 0, 10, 8, 9]
@@ -140,26 +133,36 @@ print(sorted(listC, key=lambda x: x[1]))
 [('l', 1), ('o', 2), ('v', 3), ('e', 4), ('!', 5)]
 ```
 
-###python中的枚举函数 enumerate()
-http://www.runoob.com/python/python-func-enumerate.html
-####描述
-``enumerate()`` 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在``for``循环当中。
+### python中的枚举函数 enumerate\(\)
 
-Python 2.3. 以上版本可用，2.6 添加``start```参数。
+[http://www.runoob.com/python/python-func-enumerate.html](http://www.runoob.com/python/python-func-enumerate.html)
 
-####语法
-以下是``enumerate()``方法的语法:
+#### 描述
+
+`enumerate()` 函数用于将一个可遍历的数据对象\(如列表、元组或字符串\)组合为一个索引序列，同时列出数据和数据下标，一般用在`for`循环当中。
+
+Python 2.3. 以上版本可用，2.6 添加\`\`start\`\`\`参数。
+
+#### 语法
+
+以下是`enumerate()`方法的语法:
+
 ```py
 enumerate(sequence, [start=0])
 ```
-####参数
-- sequence -- 一个序列、迭代器或其他支持迭代对象。
-- start -- 下标起始位置。
-####返回值
-返回 enumerate(枚举) 对象
 
-####实例
-以下展示了使用``enumerate()`` 方法的实例：
+#### 参数
+
+* sequence -- 一个序列、迭代器或其他支持迭代对象。
+* start -- 下标起始位置。
+  #### 返回值
+
+  返回 enumerate\(枚举\) 对象
+
+#### 实例
+
+以下展示了使用`enumerate()` 方法的实例：
+
 ```py
 >>>seasons = ['Spring', 'Summer', 'Fall', 'Winter']
 >>>list(enumerate(seasons))
@@ -167,6 +170,7 @@ enumerate(sequence, [start=0])
 >>>list(enumerate(seasons, start=1))       # 下标从 1 开始
 [(1, 'Spring'), (2, 'Summer'), (3, 'Fall'), (4, 'Winter')]
 ```
+
 ```py
 #普通的 for 循环
 >>>i = 0
@@ -179,6 +183,7 @@ enumerate(sequence, [start=0])
 1 two
 2 three
 ```
+
 ```py
 #循环使用 enumerate
 >>>seq = ['one', 'two', 'three']
@@ -189,7 +194,12 @@ enumerate(sequence, [start=0])
 1 two
 2 three
 ```
+
 本题的方法，给下标添加进list
+
 ```py
 nums = [(num, i) for i, num in enumerate(nums)]
 ```
+
+
+
