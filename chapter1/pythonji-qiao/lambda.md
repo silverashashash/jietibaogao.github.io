@@ -35,5 +35,7 @@ print(sorted(listC, key=lambda x: x[1]))
 [('l', 1), ('o', 2), ('v', 3), ('e', 4), ('!', 5)]
 ```
 
+其他：
+https://www.cnblogs.com/evening/archive/2012/03/29/2423554.html
 
 
