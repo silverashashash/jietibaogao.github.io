@@ -43,13 +43,13 @@ class Solution:
         # write your code here
         if not nums or len(nums) < 2:
             return []
-        
+
         nums = [(num, i) for i, num in enumerate(nums)]
-        
+
         nums = sorted(nums, key = lambda x : x[0])
         print(nums)
-        
-        
+
+
         for j in range(1, len(nums)):
             i = 0
             print("i=",i)
@@ -64,12 +64,14 @@ class Solution:
                     i += 1
                 else:
                     continue
-        
+
         return []
 ```
 
 * 错误1：sort 过后index会乱，要让输出的index1&lt;index2
-* 错误2：
+* 错误2：\[-1,0,1\],target=1的这种情况，要输出前两个而不是后两个，但是排序过后后两个是在前面的。怎么解决？
+    - 答案也没解决，貌似不是错误
+* 错误3: [-1,0,1],target=2这种情况超时
 
 ```py
 #九章答案，用了lambda函数（匿名函数）和enumerate函数(枚举函数）
