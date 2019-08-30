@@ -68,10 +68,10 @@ class Solution:
         return []
 ```
 
-* 错误1：sort 过后index会乱，要让输出的index1&lt;index2
-* 错误2：\[-1,0,1\],target=1的这种情况，要输出前两个而不是后两个，但是排序过后后两个是在前面的。怎么解决？
+* 错误1：sort 过后index会乱，要让输出的``index1<index2``
+* 错误2：``[-1,0,1],target=1``的这种情况，要输出前两个而不是后两个，但是排序过后后两个是在前面的。怎么解决？
     - 答案也没解决，貌似不是错误
-* 错误3: [-1,0,1],target=2这种情况超时
+* 错误3: ``[-1,0,1],target=2``这种情况超时。原因是``continue``那里应该改成``break``。否则满足``else``的时候会永远困在``while``里！后面附上别人的答案仔细看。灵活运动``sorted()``函数
 
 ```py
 #九章答案，用了lambda函数（匿名函数）和enumerate函数(枚举函数）
@@ -103,6 +103,107 @@ class Solution:
 
         return indexs
 ```
+
+
+```py
+#四种写法，如有遗落，请告知。
+
+#twoSum7：用Hash表去重，O(N)空间，O(N)时间
+#twoSum7FastSlow： 双指针法，快慢指针法，O(N)空间，O(nLogN)时间
+#twoSum7LeftSteady：双指针法，左指针自变量，右指针因变量，O(N)空间，O(nLogN)时间
+#twoSum7RightSteady：双指针法，右指针自变量，左指针因变量，O(N)空间，O(nLogN)时间
+
+class Solution:
+    """
+    @param nums: an array of Integer
+    @param target: an integer
+    @return: [index1 + 1, index2 + 1] (index1 < index2)
+    """
+    def twoSum7(self, nums, target):
+        if not nums or len(nums) < 2:
+            return []
+        
+        hashmap = {}
+        
+        for j, num in enumerate(nums):
+            if num - target in hashmap:
+                i = hashmap[num - target]
+                return sorted([i + 1, j + 1])
+            elif num + target in hashmap:
+                i = hashmap[num + target]
+                return sorted([i + 1, j + 1])
+            else:
+                hashmap[num] = j 
+        return []
+        
+    def twoSum7FastSlow(self, nums, target):
+        if not nums or len(nums) < 2:
+            return []
+        
+        numsWithIndex = [[nums[i], i] for i in range(len(nums))]
+    
+        if target < 0:
+            target = -target
+        numsWithIndex.sort()
+        
+        left, right = 0, 1 
+        while right < len(nums):
+            if left == right:
+                right += 1 
+            
+            if numsWithIndex[right][0] - numsWithIndex[left][0] < target:
+                right += 1 
+            elif numsWithIndex[right][0] - numsWithIndex[left][0] > target:
+                left += 1 
+            else:
+                return sorted([numsWithIndex[left][1] + 1, numsWithIndex[right][1] + 1])
+        
+        return []
+            
+        
+    def twoSum7LeftSteady(self, nums, target):
+        if not nums or len(nums) < 2:
+            return []
+        
+        numsWithIndex = [[nums[i], i] for i in range(len(nums))]
+    
+        if target < 0:
+            target = -target
+        numsWithIndex.sort()
+        
+        right = 1
+        for left in range(0, len(numsWithIndex) - 1):
+            if left == right:
+                right += 1
+            while right < len(numsWithIndex) and numsWithIndex[right][0] - numsWithIndex[left][0] < target:
+                right += 1 
+            if left != right and right != len(numsWithIndex) and numsWithIndex[right][0] - numsWithIndex[left][0] == target:
+                return sorted([numsWithIndex[right][1] + 1, numsWithIndex[left][1] + 1])
+                
+        return []
+        
+    def twoSum7RightSteady(self, nums, target):
+        if not nums or len(nums) < 2:
+            return []
+        
+        numsWithIndex = [[nums[i], i] for i in range(len(nums))]
+    
+        if target < 0:
+            target = -target
+        numsWithIndex.sort()
+    
+        left = 0
+        for right in range(1, len(numsWithIndex)):
+            while left < right and numsWithIndex[right][0] - numsWithIndex[left][0] > target:
+                left += 1 
+            if left != right and numsWithIndex[right][0] - numsWithIndex[left][0] == target:
+                return sorted([numsWithIndex[right][1] + 1, numsWithIndex[left][1] + 1])
+                
+        return []
+```
+
+
+
 
 ### python3 中用lambda函数的自定义排序
 
