@@ -54,6 +54,6 @@ class Solution:
 
         return slow
 ```
-- 这题lintcode和leetcode要求不一样，当node个数为偶数时，lintcode要求返回左边那个，leetcode要求返回右边那个。区别是fast初始化一个是head.next一个是head
+- 这题lintcode和leetcode要求不一样，当node个数为偶数时，lintcode要求返回左边那个，leetcode要求返回右边那个。区别是``fast``初始化一个是``fast = head.next``一个是``fast = head``
 
 
