@@ -31,6 +31,47 @@ Explanation:
 * 按九章的思路，用双指针的话，先对数组进行了排序，因此需要记录原本的下标
 * 因为是减法，注意绝对值的问题
 
+
+
+```py
+#我的答案（总是有错误）
+class Solution:
+    """
+    @param nums: an array of Integer
+    @param target: an integer
+    @return: [index1 + 1, index2 + 1] (index1 < index2)
+    """
+    def twoSum7(self, nums, target):
+        # write your code here
+        if not nums or len(nums) < 2:
+            return []
+        
+        nums = [(num, i) for i, num in enumerate(nums)]
+        
+        nums = sorted(nums, key = lambda x : x[0])
+        print(nums)
+        
+        
+        for j in range(1, len(nums)):
+            i = 0
+            print("i=",i)
+            print("j=",j)
+            while i < j:
+                if abs(nums[j][0] - nums[i][0]) == abs(target):
+                    return [nums[i][1] + 1, nums[j][1] + 1]
+                elif abs(nums[j][0] - nums[i][0]) > abs(target):
+                    i += 1
+                else:
+                    continue
+        
+        return []
+```
+
+
+- 错误1
+- 错误2
+
+
 ```py
 #九章答案，用了lambda函数（匿名函数）和enumerate函数(枚举函数）
 class Solution:
@@ -44,7 +85,7 @@ class Solution:
         nums = [(num, i) for i, num in enumerate(nums)]
         target = abs(target)    
         n, indexs = len(nums), []
-
+    
         nums = sorted(nums, key=lambda x: x[0])
 
         j = 0
