@@ -43,29 +43,32 @@ class Solution:
         # write your code here
         if not nums or len(nums) < 2:
             return []
-
+        
         nums = [(num, i) for i, num in enumerate(nums)]
-
+        
         nums = sorted(nums, key = lambda x : x[0])
         print(nums)
-
-
+        
+        
         for j in range(1, len(nums)):
             i = 0
             print("i=",i)
             print("j=",j)
             while i < j:
                 if abs(nums[j][0] - nums[i][0]) == abs(target):
-                    return [nums[i][1] + 1, nums[j][1] + 1]
+                    if nums[i][1] < nums[j][1]:
+                        return [nums[i][1] + 1, nums[j][1] + 1]
+                    else:
+                        return [nums[j][1] + 1, nums[i][1] + 1]
                 elif abs(nums[j][0] - nums[i][0]) > abs(target):
                     i += 1
                 else:
                     continue
-
+        
         return []
 ```
 
-* 错误1：sort 过后index会乱，所以要思考如何让输出的index1&lt;index2
+* 错误1：sort 过后index会乱，要让输出的index1&lt;index2
 * 错误2：
 
 ```py
@@ -155,6 +158,7 @@ enumerate(sequence, [start=0])
 
 * sequence -- 一个序列、迭代器或其他支持迭代对象。
 * start -- 下标起始位置。
+
   #### 返回值
 
   返回 enumerate\(枚举\) 对象
