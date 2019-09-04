@@ -69,4 +69,5 @@
   * [图上的BFS](chapter3-bfs/tu-shang-de-bfs.md)
     * [Clone Graph](chapter3-bfs/tu-shang-de-bfs/clone-graph.md)
     * [Word Ladder](chapter3-bfs/tu-shang-de-bfs/word-ladder.md)
+  * [矩阵上的BFS](chapter3-bfs/ju-zhen-shang-de-bfs.md)
 
