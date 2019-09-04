@@ -75,4 +75,6 @@
     * [Knight Shortest Path](chapter3-bfs/ju-zhen-shang-de-bfs/knight-shortest-path.md)
   * [拓扑排序](chapter3-bfs/tuo-pu-pai-xu.md)
     * [Topological Sorting](chapter3-bfs/tuo-pu-pai-xu/topological-sorting.md)
+    * [Course Schedule I ](chapter3-bfs/tuo-pu-pai-xu/course-schedule-i.md)
+    * [Course Schedule II](chapter3-bfs/tuo-pu-pai-xu/course-schedule-ii.md)
 
