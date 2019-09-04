@@ -57,5 +57,5 @@
       * [Code](chapter2a-sort/ji-zhong-pai-xu-de-da-an/merge-sort/code.md)
   * [几种排序的比较](chapter2a-sort/ji-zhong-pai-xu-de-bi-jiao.md)
 * [Chapter3-BFS](chapter3-bfs.md)
-  * [ladder list](chapter3-bfs/ladder-list.md)
+  * [二叉树上的BFS](chapter3-bfs/er-cha-shu-shang-de-bfs.md)
 
