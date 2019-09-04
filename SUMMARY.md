@@ -83,4 +83,5 @@
     * [Course Schedule I ](chapter3-bfs/tuo-pu-pai-xu/course-schedule-i.md)
     * [Course Schedule II](chapter3-bfs/tuo-pu-pai-xu/course-schedule-ii.md)
     * [Alien Dictionary ](chapter3-bfs/tuo-pu-pai-xu/alien-dictionary.md)
+    * [Sequence Reconstruction ](chapter3-bfs/tuo-pu-pai-xu/sequence-reconstruction.md)
 
