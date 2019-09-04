@@ -57,5 +57,9 @@
       * [Code](chapter2a-sort/ji-zhong-pai-xu-de-da-an/merge-sort/code.md)
   * [几种排序的比较](chapter2a-sort/ji-zhong-pai-xu-de-bi-jiao.md)
 * [Chapter3-BFS](chapter3-bfs.md)
+  * [BFS模板](chapter3-bfs/bfsmo-ban.md)
+    * [无需分层遍历的BFS](chapter3-bfs/bfsmo-ban/wu-xu-fen-ceng-bian-li-de-bfs.md)
+    * [需要分层遍历的BFS](chapter3-bfs/bfsmo-ban/xu-yao-fen-ceng-bian-li-de-bfs.md)
   * [二叉树上的BFS](chapter3-bfs/er-cha-shu-shang-de-bfs.md)
+    * [Binary tree level order traversal](chapter3-bfs/er-cha-shu-shang-de-bfs/binary-tree-level-order-traversal.md)
 
