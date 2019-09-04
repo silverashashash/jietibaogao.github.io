@@ -7,6 +7,7 @@
     * [逆序遍历](chapter1/pythonji-qiao/ni-xu-bian-li.md)
     * [enumerate\(\)](chapter1/pythonji-qiao/enumerate.md)
     * [lambda\(\)](chapter1/pythonji-qiao/lambda.md)
+    * [list和string之间转换](chapter1/pythonji-qiao/listhe-string-zhi-jian-zhuan-huan.md)
 * [Chapter1-Binary Search](chapter1-binary-search.md)
 * [Chapter2-Two Pointers](chapter2-two-pointers.md)
   * [Valid Palindrome](chapter2-two-pointers/valid-palindrome.md)
