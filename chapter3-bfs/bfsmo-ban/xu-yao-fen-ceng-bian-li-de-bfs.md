@@ -33,3 +33,4 @@ start放到带扩展队列中
 
 上述代码中对c++和java来说：
 size = queue.size() 是一个必须的步骤。如果在 for 循环中使用 for (int i = 0; i < queue.size(); i++) 会出错，因为 queue.size() 是一个动态变化的值。所以必须先把当前层一共有多少个节点存在局部变量 size 中，才不会把下一层的节点也在当前层进行扩展。
+python可以直接用``for _ in range(len(queue))``
