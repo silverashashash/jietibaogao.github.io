@@ -62,4 +62,8 @@
     * [需要分层遍历的BFS](chapter3-bfs/bfsmo-ban/xu-yao-fen-ceng-bian-li-de-bfs.md)
   * [二叉树上的BFS](chapter3-bfs/er-cha-shu-shang-de-bfs.md)
     * [Binary tree level order traversal](chapter3-bfs/er-cha-shu-shang-de-bfs/binary-tree-level-order-traversal.md)
+    * [Binary tree serialization ](chapter3-bfs/er-cha-shu-shang-de-bfs/binary-tree-serialization.md)
+    * [Binary Tree Level Order Traversal II](chapter3-bfs/er-cha-shu-shang-de-bfs/binary-tree-level-order-traversal-ii.md)
+    * [Binary Tree Zigzag Order Traversal ](chapter3-bfs/er-cha-shu-shang-de-bfs/binary-tree-zigzag-order-traversal.md)
+    * [Converted Binary Tree to Linked Lists by Depth](chapter3-bfs/er-cha-shu-shang-de-bfs/converted-binary-tree-to-linked-lists-by-depth.md)
 
