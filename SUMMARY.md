@@ -73,6 +73,7 @@
     * [Number of islands](chapter3-bfs/ju-zhen-shang-de-bfs/number-of-islands.md)
     * [坐标变换数组](chapter3-bfs/ju-zhen-shang-de-bfs/zuo-biao-bian-huan-shu-zu.md)
     * [Knight Shortest Path](chapter3-bfs/ju-zhen-shang-de-bfs/knight-shortest-path.md)
+    * [Zombie In Matrix](chapter3-bfs/ju-zhen-shang-de-bfs/zombie-in-matrix.md)
   * [拓扑排序](chapter3-bfs/tuo-pu-pai-xu.md)
     * [Topological Sorting](chapter3-bfs/tuo-pu-pai-xu/topological-sorting.md)
     * [Course Schedule I ](chapter3-bfs/tuo-pu-pai-xu/course-schedule-i.md)
