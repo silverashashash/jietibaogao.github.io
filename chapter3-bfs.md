@@ -30,6 +30,19 @@
  - BFS的另外两种实现方式
  - 双向宽度优先搜索 Bidirectional BFS
  
+ ####总结
+ - 能用BFS的一定不要用DFS（除非面试官要求）
+ - BFS使用的两个条件：
+     - 图的遍历（由点及面，层级遍历）
+     - 简单图最短路径
+ - 是否需要层级遍历
+     - size = queue.size()
+ - 拓扑排序必须掌握
+ - 坐标变换数组
+     - deltaX, deltaY
+     - inBound
+     
+ 
  
 
 
