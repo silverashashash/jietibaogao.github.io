@@ -70,6 +70,7 @@
     * [Clone Graph](chapter3-bfs/tu-shang-de-bfs/clone-graph.md)
     * [Word Ladder](chapter3-bfs/tu-shang-de-bfs/word-ladder.md)
     * [Graph Valid Tree](chapter3-bfs/tu-shang-de-bfs/graph-valid-tree.md)
+    * [Search Graph Nodes](chapter3-bfs/tu-shang-de-bfs/search-graph-nodes.md)
   * [矩阵上的BFS](chapter3-bfs/ju-zhen-shang-de-bfs.md)
     * [Number of islands](chapter3-bfs/ju-zhen-shang-de-bfs/number-of-islands.md)
     * [坐标变换数组](chapter3-bfs/ju-zhen-shang-de-bfs/zuo-biao-bian-huan-shu-zu.md)
