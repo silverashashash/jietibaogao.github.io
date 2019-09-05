@@ -27,6 +27,66 @@ Explanation:
     3
 ```
 
+思路：
+- 按层遍历
+- 重点是如何建立一个linked list？
+
+
+
+```py
+#自己的答案
+#看答案才知道要用dummyNode
+#感觉就跟初始化一样
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        this.val = val
+        this.left, this.right = None, None
+Definition for singly-linked list.
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+"""
+from collections import deque
+class Solution:
+    # @param {TreeNode} root the root of binary tree
+    # @return {ListNode[]} a lists of linked list
+    def binaryTreeToLists(self, root):
+        # Write your code here
+        if root is None:
+            return []
+        
+        queue = deque()
+        result = []
+        
+        queue.append(root)
+        
+        dummy = ListNode(0)
+        
+        while queue:
+            node_list = dummy
+            
+            for _ in range(len(queue)):
+
+                head = queue.popleft()
+                node_list.next = ListNode(head.val)
+                node_list = node_list.next
+                
+                if head.left:
+                    queue.append(head.left)
+                if head.right:
+                    queue.append(head.right)
+                
+            result.append(dummy.next)    
+                
+        return result
+            
+        
+
+```
+
 
 
 
