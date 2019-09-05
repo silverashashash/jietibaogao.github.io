@@ -28,3 +28,12 @@ Transformation rule such that:
 - 可以用``distance{}``记录``word:层数``，同时也可以查看word是否访问过。这样就不用size进行分层遍历了
 - 用``get_next_word``函数得到邻居关系，办法是for这个word的每一位，换成a~z中另外的字符，凑成新单词，再检测这个单词在不在词典里。
     - check 一个单词在不在词典里的时间复杂度是$$O(L)$$, $$L$$为单词长度
+
+
+
+```py
+#看了九章之后的答案
+
+```
+- for 循环里有两个条件：``next_word``要在``dict``里，``next_word``不在``distance``里，否则可能往回走
+
