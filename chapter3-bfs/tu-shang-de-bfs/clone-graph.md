@@ -68,10 +68,63 @@ def clone_graph(G):
            vertex_map[v].edges.append(vertex_map[e])
    return vertex_map[G]
 ```
+
 ```py
 #九章的答案1
+"""
+#Definition for a undirected graph node
+class UndirectedGraphNode:
+    def __init__(self, x):
+        self.label = x
+        self.neighbors = []
+"""
 
+class Solution:
+    def cloneGraph(self, node):
+        root = node
+        if node is None:
+            return node
+        
+        #Use BFS to traverse the graph and get all nodes
+        node = self.getNodes(node)
+        
+        # Copy nodes, store the old -> new mapping information in a hash map
+        mapping = {}
+        for node in nodes:
+            mapping[node] = UndirectedGraphNode(node.label)
+        
+        # Copy neighbors(edegs)
+        for node in nodes:
+            new_node = mapping[node]
+            for neighbor in node.neighbors:
+                new_neigbor = mapping[neighbor]
+                new_node.neighbor.append(new_neighbor)
+        
+        return mapping[root]
+        
+    def getNode(self, node):
+        q = collections.deque([node])
+        result = set([node])
+        while q:
+            head = q.popleft()
+            for neighbor in head.neighbors:
+                if neighbor not in result:
+                    result.add(neighbor)
+                    q.append(neighbor)
+        return result
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
 ```
+
 
 
