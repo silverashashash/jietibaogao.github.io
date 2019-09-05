@@ -8,7 +8,7 @@
 
 ### Description
 
-Given two words \(_start \_and \_end_\), and a dictionary, find the shortest transformation sequence from _start to end_, output the length of the sequence.  
+Given two words (_start_ and _end_), and a dictionary, find the shortest transformation sequence from _start_ to _end_, output the length of the sequence.  
 Transformation rule such that:
 
 1. Only one letter can be changed at a time
