@@ -20,8 +20,43 @@ deep copy：复制到不同的内存位置（修改新的不影响旧的）
 
 ```py
 #自己的答案
-```
+"""
+Definition for a undirected graph node
+class UndirectedGraphNode:
+    def __init__(self, x):
+        self.label = x
+        self.neighbors = []
+"""
 
+
+class Solution:
+    """
+    @param: node: A undirected graph node
+    @return: A undirected graph node
+    """
+    def cloneGraph(self, node):
+        # write your code here
+        if not node:
+            return None
+        
+        q = collections.deque([node])
+        vertex_map = {node: UndirectedGraphNode(node.label)}
+        
+        while q:
+            v = q.popleft()
+            for e in v.neighbors:
+                # copy node 
+                if e not in vertex_map:
+                    vertex_map[e] = UndirectedGraphNode(e.label)
+                    q.append(e)
+                # copy edge:
+                vertex_map[v].neighbors.append(vertex_map[e])
+        
+        return vertex_map[node]
+```
+注意的地方：
+- copy edge的时候是``append(vertex_map(e))`` 不是``append(e)`` 也不是``append(UndirectedGraphNode(e.label))``
+- return 的是``vertex_map[node]``
 ```py
 #leetcode上的高赞回答
 # BFS
@@ -60,7 +95,7 @@ def clone_graph(G):
     while q:
         v = q.popleft()
         for e in v.edges:
-           # Try tp copy the vertex e
+           # Try togjhk copy the vertex e
            if e not in vertex_map:
                vertex_map[e] = GraphVertex(e.label)
                q.append(e)
@@ -84,24 +119,24 @@ class Solution:
         root = node
         if node is None:
             return node
-        
+
         #Use BFS to traverse the graph and get all nodes
         node = self.getNodes(node)
-        
+
         # Copy nodes, store the old -> new mapping information in a hash map
         mapping = {}
         for node in nodes:
             mapping[node] = UndirectedGraphNode(node.label)
-        
+
         # Copy neighbors(edegs)
         for node in nodes:
             new_node = mapping[node]
             for neighbor in node.neighbors:
                 new_neigbor = mapping[neighbor]
                 new_node.neighbor.append(new_neighbor)
-        
+
         return mapping[root]
-        
+
     def getNode(self, node):
         q = collections.deque([node])
         result = set([node])
@@ -112,18 +147,6 @@ class Solution:
                     result.add(neighbor)
                     q.append(neighbor)
         return result
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
 ```
 
 
