@@ -69,10 +69,6 @@ def clone_graph(G):
    return vertex_map[G]
 ```
 
-```py
-# 黄书上的答案
-
-```
 
 
 
