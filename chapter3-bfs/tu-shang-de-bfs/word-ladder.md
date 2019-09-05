@@ -33,7 +33,40 @@ Transformation rule such that:
 
 ```py
 #看了九章之后的答案
-
+class Solution:
+    def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
+        if not beginWord or not endWord or not wordList:
+            return 0
+        
+        wordList = set(wordList)
+        q = collections.deque([beginWord])
+        distance = {beginWord: 1}
+        
+        while q:
+            word = q.popleft()
+            if word == endWord:
+                return distance[word]
+            for next_word in self.get_next_words(word):
+                if next_word not in wordList or next_word in distance:
+                    continue
+                distance[next_word] = distance[word] + 1
+                q.append(next_word)
+        return 0
+    
+    def get_next_words(self, word):
+        string = "abcdefghijklmnopqrstuvwxyz"
+        words = []
+        
+        for i in range(len(word)):
+            left, right = word[:i], word[i + 1:]
+            for char in string:
+                if word[i] == char:
+                    continue
+                words.append(left + char + right)
+        
+        return words
+        
 ```
 - for 循环里有两个条件：``next_word``要在``dict``里，``next_word``不在``distance``里，否则可能往回走
+- leetcode 里必须要把词典hashset一下，否则数据大了会超时
 
