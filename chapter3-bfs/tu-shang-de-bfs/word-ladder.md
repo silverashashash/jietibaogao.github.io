@@ -14,12 +14,14 @@ Transformation rule such that:
 1. Only one letter can be changed at a time
 2. Each intermediate word must exist in the dictionary. \(Start and end words do not need to appear in the dictionary \)
 
-3. Return 0 if there is no such transformation sequence.
+```
+- Return 0 if there is no such transformation sequence.
 
-4. All words have the same length.
-5. All words contain only lowercase alphabetic characters.
-6. You may assume no duplicates in the word list.
-7. You may assume beginWord and endWord are non-empty and are not the same.
+- All words have the same length.
 
+- All words contain only lowercase alphabetic characters.
+- You may assume no duplicates in the word list.
+- You may assume beginWord and endWord are non-empty and are not the same.
 
+``
 
