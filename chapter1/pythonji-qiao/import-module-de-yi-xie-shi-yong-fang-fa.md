@@ -15,7 +15,7 @@ queue.append(root)
 
 
 ```py
-queue   collections.deque()
+queue collections.deque([G])
 
 ```
 
