@@ -13,7 +13,7 @@ Given two words (_start_ and _end_), and a dictionary, find the shortest transfo
 Transformation rule such that:
 
 1. Only one letter can be changed at a time
-2. Each intermediate word must exist in the dictionary. \(Start and end words do not need to appear in the dictionary \)
+2. Each intermediate word must exist in the dictionary. (Start and end words do not need to appear in the dictionary)
 
 ```
 - Return 0 if there is no such transformation sequence.
