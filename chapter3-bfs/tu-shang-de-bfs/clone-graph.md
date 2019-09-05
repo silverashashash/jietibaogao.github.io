@@ -57,6 +57,44 @@ class Solution:
 注意的地方：
 - copy edge的时候是``append(vertex_map(e))`` 不是``append(e)`` 也不是``append(UndirectedGraphNode(e.label))``
 - return 的是``vertex_map[node]``
+- 把过程画出来，就知道每次new出来的节点，neighbor[]是空的。leetcode版本更清晰
+
+
+
+```py
+"""
+# Definition for a Node.
+class Node:
+    def __init__(self, val, neighbors):
+        self.val = val
+        self.neighbors = neighbors
+"""
+class Solution:
+    def cloneGraph(self, node: 'Node') -> 'Node':
+        if not node:
+            return None
+        
+        q = collections.deque([node])
+        vertex_map = {node: Node(node.val, [])}
+        
+        while q:
+            v = q.popleft()
+            for e in v.neighbors:
+                # copy value
+                if e not in vertex_map:
+                    vertex_map[e] = Node(e.val, [])
+                    q.append(e)
+                # copy edge
+                vertex_map[v].neighbors.append(vertex_map[e])
+                
+        return vertex_map[node]
+                    
+
+```
+
+
+
+
 ```py
 #leetcode上的高赞回答
 # BFS
