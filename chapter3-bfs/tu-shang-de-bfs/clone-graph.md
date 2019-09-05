@@ -50,11 +50,11 @@ class GraphVertex:
     def __init__(self, label)
         self.label = label
         self.edges = []
-    
+
 def clone_graph(G):
     if not G:
         return None
-    
+
     q = collections.deque([G])
     vertex_map = {G: GraphVertex(G.label)}
     while q:
@@ -66,7 +66,12 @@ def clone_graph(G):
                q.append(e)
            # Copy edge v -> e
            vertex_map[v].edges.append(vertex_map[e])
-   return vertex_map[G] 
+   return vertex_map[G]
+```
+
+```py
+# 黄书上的答案
+
 ```
 
 
