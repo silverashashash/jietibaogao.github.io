@@ -15,6 +15,9 @@ deep copy：复制到不同的内存位置（修改新的不影响旧的）
 第三步：找到所有的边，复制每一条边
 - 所谓的复制边，就是把neighbor[]里的所有node复制到新的node里
 - 感觉看都看不明白
+- 为什么是``queue = collections.deque([node])`` 而二叉树是``queue.append(root)``
+
+
 ```py
 #自己的答案
 
