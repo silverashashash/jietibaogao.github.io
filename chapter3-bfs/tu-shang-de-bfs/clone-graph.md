@@ -20,3 +20,29 @@ deep copy：复制到不同的内存位置（修改新的不影响旧的）
 
 ```
 
+
+
+
+
+```py
+#leetcode上的高赞回答
+# BFS
+def cloneGraph1(self, node):
+    if not node:
+        return 
+    nodeCopy = UndirectedGraphNode(node.label)
+    dic = {node: nodeCopy}
+    queue = collections.deque([node])
+    while queue:
+        node = queue.popleft()
+        for neighbor in node.neighbors:
+            if neighbor not in dic: # neighbor is not visited
+                neighborCopy = UndirectedGraphNode(neighbor.label)
+                dic[neighbor] = neighborCopy
+                dic[node].neighbors.append(neighborCopy)
+                queue.append(neighbor)
+            else:
+                dic[node].neighbors.append(dic[neighbor])
+    return nodeCopy
+```
+
