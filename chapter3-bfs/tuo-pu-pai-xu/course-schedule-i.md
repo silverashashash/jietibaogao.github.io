@@ -84,7 +84,7 @@ class Solution:
         return count == numCourses
 
 ```
-- 写了好几次出错的原因是几个``for``循环里总弄错for什么
+- 写了好几次出错的原因是几个``for``循环里总弄错for什么。
 
 
 
