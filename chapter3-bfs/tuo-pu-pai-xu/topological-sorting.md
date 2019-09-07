@@ -85,5 +85,7 @@ class Solution:
                indegree = {x : 0 for x in graph}
   ```
 
+* order.append\(node\) 的位置问题。如果pop出来的东西是order需要的，那就把这个order写在for 循环的外面。否则容易出错。
+
 
 
