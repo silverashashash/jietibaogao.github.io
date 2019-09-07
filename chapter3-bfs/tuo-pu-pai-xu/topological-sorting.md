@@ -49,13 +49,13 @@ class Solution:
         # write your code here
         if not graph:
             return []
-            
+
         order = []
         graph_indegree = self.get_indegree(graph)
         start_node = [n for n in graph if graph_indegree[n] == 0]
         q = collections.deque(start_node)
 
-        
+
         while q:
             node = q.popleft()
             order.append(node)
@@ -63,25 +63,27 @@ class Solution:
                 graph_indegree[neighbor] -= 1 
                 if graph_indegree[neighbor] == 0:
                     q.append(neighbor)
-                    
+
         return order
 
-        
-        
-        
+
+
+
     def get_indegree(self, graph):
-        
+
         indegree = {x : 0 for x in graph}
-        
+
         for node in graph:
             for neighbor in node.neighbors:
                 indegree[neighbor] += 1 
-                
+
         return indegree
 ```
-* 注意一些用法：``start_node = [n for n in graph if graph_indegree[n] == 0]``
-              ``indegree = {x : 0 for x in graph}``
 
+* 注意一些用法：`start_node = [n for n in graph if graph_indegree[n] == 0]`
+  ```
+               indegree = {x : 0 for x in graph}
+  ```
 
 
 
