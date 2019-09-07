@@ -87,6 +87,6 @@ class Solution:
   * 类似的word ladder`return distance`的位置
 
 * 初始化queue的时候传进去的参数是``start_node``而不是``[start_node]``。如果是后者会报错``'list' object has no attribute 'neighbors'``
-    - 总结下到底什么时候传进去list什么时候不是
+    - 搞清楚下到底什么时候传进去list什么时候不是
 
 
