@@ -47,7 +47,7 @@ Explanation:
 2. 怎么在给出edge list 的情况下做topo？
 
 ####问题：
-- ``1,[]`` 这种test case应该返回true而不是false
+- ``1,[]`` 这种test case应该返回true而不是false(LintCode)
 - 这次``deque``初始化好像``deque([])``和``deque()``都行
 
 
