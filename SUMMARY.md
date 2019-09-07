@@ -78,6 +78,7 @@
     * [Number of islands](chapter3-bfs/ju-zhen-shang-de-bfs/number-of-islands.md)
     * [坐标变换数组](chapter3-bfs/ju-zhen-shang-de-bfs/zuo-biao-bian-huan-shu-zu.md)
     * [Knight Shortest Path](chapter3-bfs/ju-zhen-shang-de-bfs/knight-shortest-path.md)
+      * [Knight Shortest Path II](chapter3-bfs/ju-zhen-shang-de-bfs/knight-shortest-path/knight-shortest-path-ii.md)
     * [Zombie In Matrix](chapter3-bfs/ju-zhen-shang-de-bfs/zombie-in-matrix.md)
     * [Build Post Office II ](chapter3-bfs/ju-zhen-shang-de-bfs/build-post-office-ii.md)
   * [拓扑排序](chapter3-bfs/tuo-pu-pai-xu.md)
