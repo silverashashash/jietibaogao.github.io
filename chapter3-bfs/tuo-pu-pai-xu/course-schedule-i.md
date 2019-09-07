@@ -41,10 +41,11 @@ Explanation:
 
 
 
-
-思考：
+####思考：
 1. 就是在问有没有topo？
 2. 怎么在给出edge list 的情况下做topo？
+
+
 
 
 
