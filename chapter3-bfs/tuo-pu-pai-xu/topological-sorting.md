@@ -29,12 +29,59 @@ The topological order can be:
 
 Can you do it in both BFS and DFS?
 
-
-
 ```py
 #看了答案的做法
+"""
+Definition for a Directed graph node
+class DirectedGraphNode:
+    def __init__(self, x):
+        self.label = x
+        self.neighbors = []
+"""
 
+
+class Solution:
+    """
+    @param: graph: A list of Directed graph node
+    @return: Any topological order for the given graph.
+    """
+    def topSort(self, graph):
+        # write your code here
+        if not graph:
+            return []
+            
+        order = []
+        graph_indegree = self.get_indegree(graph)
+        start_node = [n for n in graph if graph_indegree[n] == 0]
+        q = collections.deque(start_node)
+
+        
+        while q:
+            node = q.popleft()
+            order.append(node)
+            for neighbor in node.neighbors:
+                graph_indegree[neighbor] -= 1 
+                if graph_indegree[neighbor] == 0:
+                    q.append(neighbor)
+                    
+        return order
+
+        
+        
+        
+    def get_indegree(self, graph):
+        
+        indegree = {x : 0 for x in graph}
+        
+        for node in graph:
+            for neighbor in node.neighbors:
+                indegree[neighbor] += 1 
+                
+        return indegree
 ```
+* 注意一些用法：``start_node = [n for n in graph if graph_indegree[n] == 0]``
+              ``indegree = {x : 0 for x in graph}``
+
 
 
 
