@@ -58,8 +58,7 @@ Output:-1
   * 直接`x, y = q.popleft()`
 * list是不能作为dict的key的，只有immutable的才可以。所以这题要把list转成tuple
 * 这题的source和destination都是定义出来的Point Class，使用的时候要注意用法
-
-
+* leetcode 求的是起始位置。要注意边界条件里 ``start`` 和 ``end`` 不能为1，否则会报错。
 
 ```py
 # 超时的答案
@@ -82,10 +81,10 @@ class Solution:
         # write your code here
         if not grid or not grid[0]:
             return -1
-        
+
         length = {(source.x, source.y) : 0} 
         q = collections.deque([(source.x, source.y)])
-        
+
         while q:
             x, y = q.popleft()
             for delta_x, delta_y in [(1, 2), (1, -2), (-1, 2), (-1, -2), (2, 1), (2, -1), (-2, 1), (-2, -1)]:              
@@ -96,14 +95,15 @@ class Solution:
                     return length[(x,y)] + 1 
                 q.append((next_x, next_y))
                 length[(next_x, next_y)] = length[(x,y)] + 1 
-                
-                
+
+
         return -1
-    
+
     def is_valid(self, grid, x, y):
         n, m = len(grid), len(grid[0])
         return 0 <= x < n and 0 <= y < m and grid[x][y] != 1
-
+        
+        #错误原因是for 循环里 调用is_valid的时候参数写错了。。。摊手
 ```
 
 
