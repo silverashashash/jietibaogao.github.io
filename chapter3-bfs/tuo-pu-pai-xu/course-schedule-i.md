@@ -47,10 +47,44 @@ Explanation:
 2. 怎么在给出edge list 的情况下做topo？
 
 ####问题：
-- ``1,[]`` 这种test case应该返回true而不是false(LintCode)
+- ``1,[]`` 这种test case应该返回true而不是false (LintCode)
 - 这次``deque``初始化好像``deque([])``和``deque()``都行
 
 
+
+
+```py
+class Solution:
+    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+        if prerequisites is None:
+            return False
+        
+        couseNum_to_nei = {i : [] for i in range(numCourses)}
+        degree = [0 for i in range(numCourses)]
+        
+        q = collections.deque([])
+        count = 0
+        
+        for i, j in prerequisites:
+            couseNum_to_nei[j].append(i)
+            degree[i] += 1
+        
+        for x in range(numCourses):
+            if degree[x] == 0:
+                q.append(x)
+        
+        while q:
+            node = q.popleft()
+            count += 1 
+            for x in couseNum_to_nei[node]:
+                degree[x] -= 1
+                if degree[x] == 0:
+                    q.append(x)
+        
+        return count == numCourses
+
+```
+- 写了好几次出错的原因是几个``for``循环里总弄错for什么
 
 
 
