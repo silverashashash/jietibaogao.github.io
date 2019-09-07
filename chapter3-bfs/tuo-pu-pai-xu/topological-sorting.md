@@ -88,5 +88,6 @@ class Solution:
 
 * 初始化queue的时候传进去的参数是``start_node``而不是``[start_node]``。如果是后者会报错``'list' object has no attribute 'neighbors'``
     - 搞清楚下到底什么时候传进去list什么时候不是
+- ``dict``命名 ``key_to_value``比如本题九章用的是``node_to_indegree``
 
 
