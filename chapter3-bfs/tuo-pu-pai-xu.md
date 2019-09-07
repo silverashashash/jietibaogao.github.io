@@ -1,7 +1,7 @@
 ## 拓扑排序 Topological  Sorting
 
-1. 有向 \(有依赖关系 dependency）
-2. 找一个序
+1. 数据结构一定是有向 \(有依赖关系 dependency）
+2. 目的是找一个序
 
 #### 拓扑排序的四种不同问法
 
