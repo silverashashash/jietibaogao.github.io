@@ -58,9 +58,53 @@ Output:-1
   * 直接`x, y = q.popleft()`
 * list是不能作为dict的key的，只有immutable的才可以。所以这题要把list转成tuple
 * 这题的source和destination都是定义出来的Point Class，使用的时候要注意用法
-* 一开始没使用visited，因为我觉得可以走回头路，结果数据大的时候超时了
 
 
+
+```py
+# 超时的答案
+"""
+Definition for a point.
+class Point:
+    def __init__(self, a=0, b=0):
+        self.x = a
+        self.y = b
+"""
+
+class Solution:
+    """
+    @param grid: a chessboard included 0 (false) and 1 (true)
+    @param source: a point
+    @param destination: a point
+    @return: the shortest path 
+    """
+    def shortestPath(self, grid, source, destination):
+        # write your code here
+        if not grid or not grid[0]:
+            return -1
+        
+        length = {(source.x, source.y) : 0} 
+        q = collections.deque([(source.x, source.y)])
+        
+        while q:
+            x, y = q.popleft()
+            for delta_x, delta_y in [(1, 2), (1, -2), (-1, 2), (-1, -2), (2, 1), (2, -1), (-2, 1), (-2, -1)]:              
+                next_x, next_y = x + delta_x, y + delta_y
+                if not self.is_valid(grid, next_x, next_x) or (next_x, next_y) in length:
+                    continue
+                if (next_x, next_y) == (destination.x, destination.y):
+                    return length[(x,y)] + 1 
+                q.append((next_x, next_y))
+                length[(next_x, next_y)] = length[(x,y)] + 1 
+                
+                
+        return -1
+    
+    def is_valid(self, grid, x, y):
+        n, m = len(grid), len(grid[0])
+        return 0 <= x < n and 0 <= y < m and grid[x][y] != 1
+
+```
 
 
 
