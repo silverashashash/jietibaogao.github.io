@@ -5,6 +5,7 @@
 - 判断平衡二叉树 balanced binary tree
 - 判断二叉搜索树 Validate Binary search tree
     - 中序遍历是升序序列
+    - 用分治和遍历分别做
 - subsets
 
 - 二叉树的最大深度maximum depth of binary tree
