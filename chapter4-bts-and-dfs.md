@@ -4,6 +4,7 @@
 - 二叉树的最大深度maximum depth of binary tree
 - 判断平衡二叉树 balanced binary tree
 - 判断二叉搜索树 Validate Binary search tree
+    - 中序遍历是升序序列
 - subsets
 
 - 二叉树的最大深度maximum depth of binary tree
@@ -14,6 +15,7 @@
 - 分治法：
     - 分析当先节点和左右子树最大深度的关系
     - 需要一个return value 
+    
 
 
 
