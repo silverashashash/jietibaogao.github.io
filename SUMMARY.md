@@ -89,6 +89,11 @@
     * [Sequence Reconstruction ](chapter3-bfs/tuo-pu-pai-xu/sequence-reconstruction.md)
 * [Chapter4-BTS and DFS](chapter4-bts-and-dfs.md)
   * [随课教程](chapter4-bts-and-dfs/sui-ke-jiao-cheng.md)
+    * Maximum Depth of Binary Tree
+    * Balanced Binary Tree
+    * Validate Binary Search Tree
+    * 非递归方法实现先序遍历
+    * 非递归方法实现中序遍历
   * [第一类问题](chapter4-bts-and-dfs/di-yi-lei-wen-ti.md)
     * Minimum Subtree
     * Binary Tree Path
@@ -105,4 +110,7 @@
       * [Binary Tree In-order Traversal](chapter4-bts-and-dfs/di-san-lei-wen-ti/binary-search-tree-iterator/binary-tree-in-order-traversal.md)
     * [Closest Binary Search Tree Value](chapter4-bts-and-dfs/di-san-lei-wen-ti/closest-binary-search-tree-value.md)
       * [Closest Binary Search Tree II](chapter4-bts-and-dfs/di-san-lei-wen-ti/closest-binary-search-tree-value/closest-binary-search-tree-ii.md)
+    * Search Range in Binary Search Tree
+    * Insert Node in a BST
+    * Remove Node in a BST
 
