@@ -89,4 +89,11 @@
     * [Sequence Reconstruction ](chapter3-bfs/tuo-pu-pai-xu/sequence-reconstruction.md)
 * [Chapter4-BTS and DFS](chapter4-bts-and-dfs.md)
   * [随课教程](chapter4-bts-and-dfs/sui-ke-jiao-cheng.md)
+  * [第一类问题](chapter4-bts-and-dfs/di-yi-lei-wen-ti.md)
+    * Minimum Subtree
+    * Binary Tree Path
+    * [Lowest Common Ancestor](chapter4-bts-and-dfs/di-yi-lei-wen-ti/lowest-common-ancestor.md)
+      * LAC II
+      * LAC III
+  * [第二类问题](chapter4-bts-and-dfs/di-er-lei-wen-ti.md)
 
