@@ -90,7 +90,7 @@
 * [Chapter4-BTS and DFS](chapter4-bts-and-dfs.md)
   * [随课教程](chapter4-bts-and-dfs/sui-ke-jiao-cheng.md)
     * [Maximum Depth of Binary Tree](chapter4-bts-and-dfs/sui-ke-jiao-cheng/maximum-depth-of-binary-tree.md)
-    * Balanced Binary Tree
+    * [Balanced Binary Tree](chapter4-bts-and-dfs/sui-ke-jiao-cheng/balanced-binary-tree.md)
     * Validate Binary Search Tree
     * 非递归方法实现先序遍历
     * 非递归方法实现中序遍历
