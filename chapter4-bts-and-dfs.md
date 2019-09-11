@@ -1,22 +1,20 @@
 ##  二叉树与树上的深度优先搜索
 
-随课视频里的题目：
-- 二叉树的最大深度maximum depth of binary tree
-- 判断平衡二叉树 balanced binary tree
-- 判断二叉搜索树 Validate Binary search tree
-    - 中序遍历是升序序列
-    - 用分治和遍历分别做
-- subsets
 
-- 二叉树的最大深度maximum depth of binary tree
-对比遍历和分治法
-- 遍历法：
-    - 按照某种顺序（前序、中序、后序）把所有的节点走一遍
-    - 需要一个全局变量记录走的过程（本题是当前节点的深度）
-- 分治法：
-    - 分析当先节点和左右子树最大深度的关系
-    - 需要一个return value 
+####二叉树问题的考点
+- 第一类考察形态：求值，求路径的二叉树问题
+    - 求子树平均值 (subtree-with-maximum-average)
+        - 考点本质：DFS
+        
     
+- 第二类考察形态：结构变化类二叉树问题
+    - 反转二叉树 (invert-binary-tree)
+        - 考点本质：DFS
+- 第三类考察形态：二叉查找树(Binary Search Tree)问题
+    - 非递归(Non-recursion or Interation)版本的中序遍历(In-order Tranversal)
+    - 验证BST (validate-binary-search-tree)
+        - 考点本质：DFS
+
 
 
 

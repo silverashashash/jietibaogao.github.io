@@ -88,4 +88,5 @@
     * [Alien Dictionary ](chapter3-bfs/tuo-pu-pai-xu/alien-dictionary.md)
     * [Sequence Reconstruction ](chapter3-bfs/tuo-pu-pai-xu/sequence-reconstruction.md)
 * [Chapter4-BTS and DFS](chapter4-bts-and-dfs.md)
+  * [随课教程](chapter4-bts-and-dfs/sui-ke-jiao-cheng.md)
 
