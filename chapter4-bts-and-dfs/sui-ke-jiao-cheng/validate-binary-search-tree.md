@@ -4,42 +4,47 @@
 
 ```py
 # 参考九章的答案
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
 
 class Solution:
-    def isValidBST(self, root: TreeNode) -> bool:
+    """
+    @param root: The root of binary tree.
+    @return: True if the binary tree is BST, or false
+    """
+    def isValidBST(self, root):
+        # write your code here
         if root is None:
             return True
-
-        is_valid, max_node, min_node = self.dfs(root)
-
-        return is_valid
-
-
+        
+        isValid, max_value, min_value = self.dfs(root)
+        
+        return isValid
+        
     def dfs(self, root):
         if root is None:
             return True, None, None
-
-        left_isValid, left_maxNode, left_minNode = self.dfs(root.left)
-        right_isValid, right_maxNode, right_minNode = self.dfs(root.right)
-
+            
+        left_isValid, left_maxValue, left_minValue = self.dfs(root.left)
+        right_isValid, right_maxValue, right_minValue = self.dfs(root.right)
+        
         if left_isValid is False or right_isValid is False:
+            return False, None, None 
+        if left_maxValue is not None and left_maxValue >= root.val:
+            return False, None, None 
+        if right_minValue is not None and right_minValue <= root.val:
             return False, None, None
-        if left_maxNode is not None and left_maxNode >= root.val:
-            return False, None, None
-        if right_minNode is not None and right_minNode <= root.val:
-            return False, None, None
-
-
-        min_node = left_minNode if left_minNode is not None else root.val
-        max_node = right_maxNode if right_maxNode is not None else root.val
-
-        return True, max_node, min_node
+        
+        maxValue = right_maxValue if right_maxValue is not None else root.val
+        minValue = left_minValue if left_minValue is not None else root.val
+        
+        return True, maxValue, minValue
+        
 ```
 
 * 其实这个node里存的要么是一个数字，要么是None
@@ -48,4 +53,9 @@ class Solution:
  minNode = leftMin if leftMin is not None else root.val
  maxNode = rightMax if rightMax is not None else root.val
  ```
+* 注意在最后 获得最大最小值的时候别搞反了
+```py
+maxValue = right_maxValue if right_maxValue is not None else root.val
+minValue = left_minValue if left_minValue is not None else root.val
+```
 
