@@ -89,7 +89,7 @@
     * [Sequence Reconstruction ](chapter3-bfs/tuo-pu-pai-xu/sequence-reconstruction.md)
 * [Chapter4-BTS and DFS](chapter4-bts-and-dfs.md)
   * [随课教程](chapter4-bts-and-dfs/sui-ke-jiao-cheng.md)
-    * Maximum Depth of Binary Tree
+    * [Maximum Depth of Binary Tree](chapter4-bts-and-dfs/sui-ke-jiao-cheng/maximum-depth-of-binary-tree.md)
     * Balanced Binary Tree
     * Validate Binary Search Tree
     * 非递归方法实现先序遍历
@@ -102,7 +102,8 @@
       * LAC II
       * LAC III
   * [第二类问题](chapter4-bts-and-dfs/di-er-lei-wen-ti.md)
-    * Flatten Binary Tree to Linked List
+    * [Flatten Binary Tree to Linked List](chapter4-bts-and-dfs/di-er-lei-wen-ti/flatten-binary-tree-to-linked-list.md)
+    * Invert Binary Tree
   * [第三类问题](chapter4-bts-and-dfs/di-san-lei-wen-ti.md)
     * [Kth Smallest Element in BST](chapter4-bts-and-dfs/di-san-lei-wen-ti/kth-smallest-element-in-bst.md)
     * [Binary Search Tree Iterator](chapter4-bts-and-dfs/di-san-lei-wen-ti/binary-search-tree-iterator.md)

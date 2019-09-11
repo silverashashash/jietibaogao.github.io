@@ -8,7 +8,7 @@
         
     
 - 第二类考察形态：结构变化类二叉树问题
-    - 反转二叉树 (invert-binary-tree)
+    - 翻转二叉树 (invert-binary-tree)
         - 考点本质：DFS
 - 第三类考察形态：二叉查找树(Binary Search Tree)问题
     - 非递归(Non-recursion or Interation)版本的中序遍历(In-order Tranversal)
