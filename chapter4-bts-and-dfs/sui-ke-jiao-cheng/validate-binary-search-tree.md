@@ -54,6 +54,7 @@ class Solution:
  maxNode = rightMax if rightMax is not None else root.val
  ```
 * 注意在最后 获得最大最小值的时候别搞反了
+
 ```py
 maxValue = right_maxValue if right_maxValue is not None else root.val
 minValue = left_minValue if left_minValue is not None else root.val

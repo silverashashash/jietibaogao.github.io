@@ -96,7 +96,7 @@
     * [非递归方法实现中序遍历](chapter4-bts-and-dfs/sui-ke-jiao-cheng/fei-di-gui-fang-fa-shi-xian-zhong-xu-bian-li.md)
     * [Subsets](chapter4-bts-and-dfs/sui-ke-jiao-cheng/subsets.md)
   * [第一类问题](chapter4-bts-and-dfs/di-yi-lei-wen-ti.md)
-    * Minimum Subtree
+    * [Minimum Subtree](chapter4-bts-and-dfs/di-yi-lei-wen-ti/minimum-subtree.md)
     * Binary Tree Path
     * [Lowest Common Ancestor](chapter4-bts-and-dfs/di-yi-lei-wen-ti/lowest-common-ancestor.md)
       * LAC II
