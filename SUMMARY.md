@@ -94,6 +94,7 @@
     * Validate Binary Search Tree
     * 非递归方法实现先序遍历
     * 非递归方法实现中序遍历
+    * [Subsets](chapter4-bts-and-dfs/sui-ke-jiao-cheng/subsets.md)
   * [第一类问题](chapter4-bts-and-dfs/di-yi-lei-wen-ti.md)
     * Minimum Subtree
     * Binary Tree Path
