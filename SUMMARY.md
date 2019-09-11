@@ -100,4 +100,5 @@
   * [第三类问题](chapter4-bts-and-dfs/di-san-lei-wen-ti.md)
     * [Kth Smallest Element in BST](chapter4-bts-and-dfs/di-san-lei-wen-ti/kth-smallest-element-in-bst.md)
     * [Binary Search Tree Iterator](chapter4-bts-and-dfs/di-san-lei-wen-ti/binary-search-tree-iterator.md)
+      * [In-order Successor in Binary Search Tree](chapter4-bts-and-dfs/di-san-lei-wen-ti/binary-search-tree-iterator/in-order-successor-in-binary-search-tree.md)
 
