@@ -98,4 +98,5 @@
   * [第二类问题](chapter4-bts-and-dfs/di-er-lei-wen-ti.md)
     * Flatten Binary Tree to Linked List
   * [第三类问题](chapter4-bts-and-dfs/di-san-lei-wen-ti.md)
+    * [Kth Smallest Element in BST](chapter4-bts-and-dfs/di-san-lei-wen-ti/kth-smallest-element-in-bst.md)
 
