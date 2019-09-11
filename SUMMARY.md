@@ -103,4 +103,6 @@
       * [In-order Successor in Binary Search Tree](chapter4-bts-and-dfs/di-san-lei-wen-ti/binary-search-tree-iterator/in-order-successor-in-binary-search-tree.md)
       * [Validate Binary Search Tree](chapter4-bts-and-dfs/di-san-lei-wen-ti/binary-search-tree-iterator/validate-binary-search-tree.md)
       * [Binary Tree In-order Traversal](chapter4-bts-and-dfs/di-san-lei-wen-ti/binary-search-tree-iterator/binary-tree-in-order-traversal.md)
+    * [Closest Binary Search Tree Value](chapter4-bts-and-dfs/di-san-lei-wen-ti/closest-binary-search-tree-value.md)
+      * [Closest Binary Search Tree II](chapter4-bts-and-dfs/di-san-lei-wen-ti/closest-binary-search-tree-value/closest-binary-search-tree-ii.md)
 
