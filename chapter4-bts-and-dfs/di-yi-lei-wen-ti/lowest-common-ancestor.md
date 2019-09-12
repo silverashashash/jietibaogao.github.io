@@ -21,3 +21,12 @@ https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
     - 代码缺点：
         - ``if root is A or root is B: return None``这里不知道return的是LCA还是A、B其中的一个点
         - 要判断LCA是不是都在这个子树里，见LCA-III这题
+        
+
+
+
+```py
+
+
+```
+
