@@ -87,7 +87,7 @@
     * [Course Schedule II](chapter3-bfs/tuo-pu-pai-xu/course-schedule-ii.md)
     * [Alien Dictionary ](chapter3-bfs/tuo-pu-pai-xu/alien-dictionary.md)
     * [Sequence Reconstruction ](chapter3-bfs/tuo-pu-pai-xu/sequence-reconstruction.md)
-* [Chapter4-BTS and DFS](chapter4-bts-and-dfs.md)
+* [Chapter4-BST and DFS](chapter4-bts-and-dfs.md)
   * [随课教程](chapter4-bts-and-dfs/sui-ke-jiao-cheng.md)
     * [Maximum Depth of Binary Tree](chapter4-bts-and-dfs/sui-ke-jiao-cheng/maximum-depth-of-binary-tree.md)
     * [Balanced Binary Tree](chapter4-bts-and-dfs/sui-ke-jiao-cheng/balanced-binary-tree.md)
