@@ -1,4 +1,6 @@
-## LCA II
+
+
+``## LCA II
 
 [https://www.lintcode.com/problem/lowest-common-ancestor-ii/](https://www.lintcode.com/problem/lowest-common-ancestor-ii/)
 
@@ -24,4 +26,30 @@ class ParentTreeNode:
 
 ```
 A, B 两个点向上走，分别记录路径，这题不用复杂的方法
+
+
+
+
+```py
+# 看了答案的结果
+# 据说trail用set()会更快
+class Solution:
+    
+    def lowestCommonAncestorII(self, root, A, B):
+        
+        trail = [root]
+        
+        while A is not root:
+            if A is B:
+                return A
+            trail.append(A)
+            A = A.parent 
+        
+        while B not in trail and B is not root:
+            B = B.parent
+    
+        return B
+```
+
+
 
