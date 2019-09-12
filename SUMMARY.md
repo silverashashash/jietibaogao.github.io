@@ -103,7 +103,7 @@
       * [LCA III](chapter4-bts-and-dfs/di-yi-lei-wen-ti/lowest-common-ancestor/lca-iii.md)
   * [第二类问题](chapter4-bts-and-dfs/di-er-lei-wen-ti.md)
     * [Flatten Binary Tree to Linked List](chapter4-bts-and-dfs/di-er-lei-wen-ti/flatten-binary-tree-to-linked-list.md)
-    * Invert Binary Tree
+    * [Invert Binary Tree](chapter4-bts-and-dfs/di-er-lei-wen-ti/invert-binary-tree.md)
   * [第三类问题](chapter4-bts-and-dfs/di-san-lei-wen-ti.md)
     * [Kth Smallest Element in BST](chapter4-bts-and-dfs/di-san-lei-wen-ti/kth-smallest-element-in-bst.md)
     * [Binary Search Tree Iterator](chapter4-bts-and-dfs/di-san-lei-wen-ti/binary-search-tree-iterator.md)
