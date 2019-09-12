@@ -40,4 +40,4 @@ class Solution:
 ```
 
 问题
-- 一开始直接``left_cur, right_cur = right_cur, left_cur``出错
+- 一开始直接``left_cur, right_cur = right_cur, left_cur``出错，左右两个结点交换位置跟两个变量交换值不一样！
