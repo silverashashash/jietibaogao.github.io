@@ -2,8 +2,6 @@
 
 [https://www.lintcode.com/problem/minimum-subtree/](https://www.lintcode.com/problem/minimum-subtree/)
 
-
-
 ```py
 """
 Definition of TreeNode:
@@ -28,23 +26,18 @@ class Solution:
 
     def dfs(self, root):
         if root is None:
-            return root, None
-
-        left_node, left_min = self.dfs(root.left)
-        right_node, right_min = self.dfs(root.right)
-
-        if left_node.val > root.val:
-            minNode, minValue = root, root.val
-        else:
-            minNode, minValue = left_node, left_node.val
-
-        if right_node.val < minValue:
-            minNode, minValue = right_node, right_node.val
-
-        return minNode, minValue
+             return 0
+         
+         left_minNode, left_minSum = self.dfs(root.left)
+         right_minNode, right_minSum = self.dfs(root.right)
+         
+         total = left_
+         
+         return left_Sum + right_Sum + root.val
+         
 ```
 
-* 又是一个type混乱的题
+* 又是个混乱的题目
 * 
 
 
