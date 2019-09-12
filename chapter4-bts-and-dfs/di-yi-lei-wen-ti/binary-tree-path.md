@@ -52,12 +52,12 @@ class Solution:
         if root.left is None and root.right is None:
             return [str(root.val)]
         
-        paths = []
+   
         
         left_path = self.dfs(root.left)
         right_path = self.dfs(root.right)
         
-
+        paths = []
         for path in left_path:
             paths.append(str(root.val) + '->' + path)
         for path in right_path:
