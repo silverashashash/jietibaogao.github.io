@@ -8,7 +8,10 @@
 
 Flatten a binary tree to a fake "linked list" in pre-order traversal.
 
-Here we use the_right_pointer in TreeNode as the_next_pointer in ListNode.
+Here we use the _right_ pointer in TreeNode as the _next_ pointer in ListNode.
 
-Don't forget to mark the left child of each node to null. Or you will get Time Limit Exceeded or Memory Limit Exceeded.
+```
+Don't forget to mark the left child of each node to null. 
+Or you will get Time Limit Exceeded or Memory Limit Exceeded.
 
+```
