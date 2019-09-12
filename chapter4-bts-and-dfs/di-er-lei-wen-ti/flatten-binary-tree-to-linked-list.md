@@ -27,6 +27,45 @@ Or you will get Time Limit Exceeded or Memory Limit Exceeded.
 
 ```py
 #看了答案才知道的
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def flatten(self, root: TreeNode) -> None:
+        """
+        Do not return anything, modify root in-place instead.
+        """
+
+        self.helper(root)
+        
+    def helper(self, root):
+        if root is None:
+            return None
+        
+        left_last = self.helper(root.left)
+        right_last = self.helper(root.right)
+        
+        if root.left is None and root.right is None:
+            return root
+
+        if left_last is not None:
+            left_last.right = root.right
+            root.right = root.left
+            root.left = None
+
+
+        if right_last:
+            return right_last
+        
+        if left_last:
+            return left_last
+
 
 ```
+
+- 注意交换完node之后``left_last``会变，因此不能直接``return left_last``
 
