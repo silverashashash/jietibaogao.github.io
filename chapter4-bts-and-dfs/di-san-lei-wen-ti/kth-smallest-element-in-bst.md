@@ -7,3 +7,6 @@
 - recursion是利用操作系统模拟出的栈空间
     - python强制递归层数不能超过1万层，默认900层左右
     
+https://www.lintcode.com/problem/kth-smallest-element-in-a-bst/
+https://leetcode.com/problems/kth-smallest-element-in-a-bst/
+
