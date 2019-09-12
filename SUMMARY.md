@@ -97,7 +97,7 @@
     * [Subsets](chapter4-bts-and-dfs/sui-ke-jiao-cheng/subsets.md)
   * [第一类问题](chapter4-bts-and-dfs/di-yi-lei-wen-ti.md)
     * [Minimum Subtree](chapter4-bts-and-dfs/di-yi-lei-wen-ti/minimum-subtree.md)
-    * Binary Tree Path
+    * [Binary Tree Path](chapter4-bts-and-dfs/di-yi-lei-wen-ti/binary-tree-path.md)
     * [Lowest Common Ancestor](chapter4-bts-and-dfs/di-yi-lei-wen-ti/lowest-common-ancestor.md)
       * LAC II
       * LAC III
