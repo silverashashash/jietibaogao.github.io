@@ -99,7 +99,7 @@
     * [Minimum Subtree](chapter4-bts-and-dfs/di-yi-lei-wen-ti/minimum-subtree.md)
     * [Binary Tree Path](chapter4-bts-and-dfs/di-yi-lei-wen-ti/binary-tree-path.md)
     * [Lowest Common Ancestor](chapter4-bts-and-dfs/di-yi-lei-wen-ti/lowest-common-ancestor.md)
-      * LAC II
+      * [LAC II](chapter4-bts-and-dfs/di-yi-lei-wen-ti/lowest-common-ancestor/lac-ii.md)
       * LAC III
   * [第二类问题](chapter4-bts-and-dfs/di-er-lei-wen-ti.md)
     * [Flatten Binary Tree to Linked List](chapter4-bts-and-dfs/di-er-lei-wen-ti/flatten-binary-tree-to-linked-list.md)
