@@ -64,11 +64,7 @@ class Solution:
             paths.append(str(root.val) + '->' + path)
         
         return paths
-        
-            
-        
-        
-
-
 ```
+- 搞清楚左右子树和root的关系很重要
+- root为叶子结点的判断不能少
 
