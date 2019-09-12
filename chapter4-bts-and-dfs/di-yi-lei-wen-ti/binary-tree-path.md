@@ -12,3 +12,6 @@
 - divide and conquer 
     - 整棵树的路径和左右子树的路径的关系？
     - 注意root是叶子结点的时候需要特殊处理（``root.right`` 和root.left都是None）
+    
+    
+    

@@ -54,6 +54,6 @@ class Solution:
 ```
 - 答案是空，为啥？
     - 因为``sum_total`` return为``sys.maxsize``了，应该改成``0``，否则sum_total 咋跟 sum_min 比较啊？？？
-* 
+
 
 
