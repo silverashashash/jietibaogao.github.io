@@ -2,7 +2,7 @@
 
 [https://www.lintcode.com/problem/minimum-subtree/](https://www.lintcode.com/problem/minimum-subtree/)
 
-[https://leetcode.com/problems/sum-of-subarray-minimums/](https://leetcode.com/problems/sum-of-subarray-minimums/)
+
 
 ```py
 """
