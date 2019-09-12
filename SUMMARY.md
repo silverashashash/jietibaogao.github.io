@@ -106,6 +106,7 @@
     * [Invert Binary Tree](chapter4-bts-and-dfs/di-er-lei-wen-ti/invert-binary-tree.md)
   * [第三类问题](chapter4-bts-and-dfs/di-san-lei-wen-ti.md)
     * [Kth Smallest Element in BST](chapter4-bts-and-dfs/di-san-lei-wen-ti/kth-smallest-element-in-bst.md)
+      * 如何优化 kthSmallest这个操作？
     * [Binary Search Tree Iterator](chapter4-bts-and-dfs/di-san-lei-wen-ti/binary-search-tree-iterator.md)
       * [In-order Successor in Binary Search Tree](chapter4-bts-and-dfs/di-san-lei-wen-ti/binary-search-tree-iterator/in-order-successor-in-binary-search-tree.md)
       * [Validate Binary Search Tree](chapter4-bts-and-dfs/di-san-lei-wen-ti/binary-search-tree-iterator/validate-binary-search-tree.md)
