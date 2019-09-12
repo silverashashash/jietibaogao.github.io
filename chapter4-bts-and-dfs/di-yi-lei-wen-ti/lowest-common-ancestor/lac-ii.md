@@ -21,5 +21,7 @@ class ParentTreeNode:
         self.parent, self.left, self.right = None, None, None
 """
 
+
 ```
+A, B 两个点向上走，分别记录路径，这题不用复杂的方法
 
