@@ -106,14 +106,14 @@
     * [Invert Binary Tree](chapter4-bts-and-dfs/di-er-lei-wen-ti/invert-binary-tree.md)
   * [第三类问题](chapter4-bts-and-dfs/di-san-lei-wen-ti.md)
     * [Kth Smallest Element in BST](chapter4-bts-and-dfs/di-san-lei-wen-ti/kth-smallest-element-in-bst.md)
-      * 如何优化 kthSmallest这个操作？
+      * [如何优化 kthSmallest这个操作？](chapter4-bts-and-dfs/di-san-lei-wen-ti/kth-smallest-element-in-bst/ru-he-you-hua-kthsmallest-zhe-ge-cao-zuo-ff1f.md)
     * [Binary Search Tree Iterator](chapter4-bts-and-dfs/di-san-lei-wen-ti/binary-search-tree-iterator.md)
       * [In-order Successor in Binary Search Tree](chapter4-bts-and-dfs/di-san-lei-wen-ti/binary-search-tree-iterator/in-order-successor-in-binary-search-tree.md)
       * [Validate Binary Search Tree](chapter4-bts-and-dfs/di-san-lei-wen-ti/binary-search-tree-iterator/validate-binary-search-tree.md)
       * [Binary Tree In-order Traversal](chapter4-bts-and-dfs/di-san-lei-wen-ti/binary-search-tree-iterator/binary-tree-in-order-traversal.md)
     * [Closest Binary Search Tree Value](chapter4-bts-and-dfs/di-san-lei-wen-ti/closest-binary-search-tree-value.md)
       * [Closest Binary Search Tree II](chapter4-bts-and-dfs/di-san-lei-wen-ti/closest-binary-search-tree-value/closest-binary-search-tree-ii.md)
-    * Search Range in Binary Search Tree
-    * Insert Node in a BST
+    * [Search Range in Binary Search Tree](chapter4-bts-and-dfs/di-san-lei-wen-ti/search-range-in-binary-search-tree.md)
+    * [Insert Node in a BST](chapter4-bts-and-dfs/di-san-lei-wen-ti/insert-node-in-a-bst.md)
     * Remove Node in a BST
 
