@@ -2,8 +2,6 @@
 https://www.lintcode.com/problem/kth-smallest-element-in-a-bst/
 https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 
-
-
 - 本题需要背下来
 - 考点1: BST的in-order性质 （中序遍历的第k个）
 - 考点2: BST的traversal非递归版本(iteration)
