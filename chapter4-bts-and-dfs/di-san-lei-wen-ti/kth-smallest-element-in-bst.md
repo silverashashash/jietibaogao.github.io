@@ -10,3 +10,13 @@
 https://www.lintcode.com/problem/kth-smallest-element-in-a-bst/
 https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 
+- iteration 版本 在随堂练习里的太复杂了看不懂，九章答案用的dummy node更直接
+
+
+
+```py
+
+```
+
+
+
