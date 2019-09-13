@@ -52,3 +52,69 @@ class Solution:
         return inorder
  
  ```
+ 
+ ```py
+ # 答案里一个简单明了的解答：
+ # 添加所有最左边节点到栈。
+ # pop stack 然后添加到结果。
+ # 查找当前node的右边节点是否为空， 如果不为空，重复step 1。
+ class Solution:
+    """
+    @param root: A Tree
+    @return: Inorder in ArrayList which contains node values.
+    """
+    def inorderTraversal(self, root):
+        # write your code here
+        if not root:
+            return []
+        
+        result = []
+        stack = []
+        
+        while root:
+            stack.append(root)
+            root = root.left
+        
+        while stack:
+            curNode = stack.pop()
+            result.append(curNode.val)
+            
+            if curNode.right:
+                curNode = curNode.right
+                while curNode:
+                    stack.append(curNode)
+                    curNode = curNode.left
+        
+        return result
+ ```
+ 
+ ```py
+ #更精简的版本
+ # Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def inorderTraversal(self, root: TreeNode) -> List[int]:
+        if not root:
+            return []
+        
+        stack = []
+        result = []
+        node = root
+        while stack or node:
+            while node:
+                stack.append(node)
+                node = node.left
+            
+            node = stack.pop()
+            result.append(node.val)
+            
+            node = node.right
+        
+        return result
+        
+ ```
