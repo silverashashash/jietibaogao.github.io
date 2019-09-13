@@ -1,5 +1,8 @@
 ## Kth Smallest Element in BST
-http://www.lintcode.com/problem/kth-smallest-element-in-bst/
+https://www.lintcode.com/problem/kth-smallest-element-in-a-bst/
+https://leetcode.com/problems/kth-smallest-element-in-a-bst/
+
+
 
 - 本题需要背下来
 - 考点1: BST的in-order性质 （中序遍历的第k个）
@@ -9,8 +12,7 @@ http://www.lintcode.com/problem/kth-smallest-element-in-bst/
 - recursion是利用操作系统模拟出的栈空间
     - python强制递归层数不能超过1万层，默认900层左右
     
-https://www.lintcode.com/problem/kth-smallest-element-in-a-bst/
-https://leetcode.com/problems/kth-smallest-element-in-a-bst/
+
 
 - iteration 版本 在随堂练习里的太复杂了看不懂，九章答案用的dummy node更直接, 同学给的答案更简单
 
