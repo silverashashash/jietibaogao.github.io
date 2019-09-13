@@ -13,7 +13,7 @@ https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 - iteration 版本 在随堂练习里的太复杂了看不懂，九章答案用的dummy node更直接, 同学给的答案更简单
 
 
-- 递归的方法：有一个变量++，一直加到k为止
+- 递归的方法：有一个变量++，一直加到k为止；或者k--，一直减到0为止
 
 
 ```py
