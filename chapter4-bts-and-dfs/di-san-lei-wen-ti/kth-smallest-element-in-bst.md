@@ -1,6 +1,6 @@
 ## Kth Smallest Element in BST
 - 本题需要背下来
-- 考点1: BST的in-order性质
+- 考点1: BST的in-order性质 （中序遍历的第k个）
 - 考点2: BST的traversal非递归版本(iteration)
     - 方法：用dummy node （参考随课教程）
     - 一般BST的考点都是iteration版本的traveral
@@ -12,6 +12,8 @@ https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 
 - iteration 版本 在随堂练习里的太复杂了看不懂，九章答案用的dummy node更直接, 同学给的答案更简单
 
+
+- 递归的方法：有一个变量++，一直加到k为止
 
 
 ```py
