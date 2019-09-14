@@ -9,9 +9,9 @@
 该iterator算法即non-recursion 的 in-order traversal, 不仅仅适用于BST，任何Binary Tree 都可以
 
 * stack 中保存一路走到当前节点的所有节点
-* stack 中的栈顶 一直存储iterator指向的当前节点
-* hasNext\(\) 只需要判断stack是否为空
-* next\(\) 只需要返回 stack 的栈顶值，并将 iterator 挪到下一个点，最stack进行相应的变化
+* stack 中的栈顶 一直存储 iterator指向的当前节点
+* `hasNext()` 只需要判断 stack是否为空
+* `next()` 只需要返回 stack 的栈顶值，并将 iterator 挪到下一个点，最stack进行相应的变化
 
 挪到下一个点的算法如下：
 
