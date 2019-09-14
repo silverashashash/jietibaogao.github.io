@@ -1,6 +1,7 @@
 ## Validate Binary Search Tree
 
 已经完全糊涂了 什么时候是node，什么时候是node.val
+- 需要掌握非递归版本
 
 ```py
 # 参考九章的答案
