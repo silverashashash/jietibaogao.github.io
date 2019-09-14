@@ -1,5 +1,7 @@
 ## Binary Search Tree Iterator
 阅读全文并背诵
+https://www.lintcode.com/problem/binary-search-tree-iterator/description
+https://leetcode.com/problems/binary-search-tree-iterator/
 
 ####Binary Search Tree Interator
 该iterator算法即non-recursion 的 in-order traversal, 不仅仅适用于BST，任何Binary Tree 都可以
