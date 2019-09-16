@@ -116,4 +116,5 @@
     * [Search Range in Binary Search Tree](chapter4-bts-and-dfs/di-san-lei-wen-ti/search-range-in-binary-search-tree.md)
     * [Insert Node in a BST](chapter4-bts-and-dfs/di-san-lei-wen-ti/insert-node-in-a-bst.md)
     * [Remove Node in a BST](chapter4-bts-and-dfs/di-san-lei-wen-ti/remove-node-in-a-bst.md)
+* [Chapter 5 Combination-based DFS & Memoization Search](chapter-5-combination-based-dfs-and-memoization-search.md)
 
