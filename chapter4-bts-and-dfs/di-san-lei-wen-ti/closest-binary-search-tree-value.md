@@ -16,7 +16,7 @@ https://www.lintcode.com/problem/closest-binary-search-tree-value/
 时间复杂度为 $$O(h)$$，注意如果你使用 in-order traversal 的化，时间复杂度会是 o(n)o(n) 并不是最优的。另外复杂度也不是 $$O(logn)$$ 因为BST 并不保证树高是 $$logn$$的。
  
  
- 4153447593
+
  
  ```py
  Class Solution:
