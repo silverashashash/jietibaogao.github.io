@@ -26,8 +26,6 @@ class Solution:
         
         subset.pop()
         self.dfs(nums, index + 1, subset)
-        
-        
-        
+              
 ```
 
