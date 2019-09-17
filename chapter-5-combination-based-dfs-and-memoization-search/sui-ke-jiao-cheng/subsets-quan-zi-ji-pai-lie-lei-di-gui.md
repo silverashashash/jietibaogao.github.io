@@ -40,6 +40,7 @@ for i in range(start_index, len(nums)):
 
 ```
 这样还不用pop()，因为subset的值并没有改变，而是产生了一个新的list往下传递
+但是这样的时间复杂度会增加，因为要额外复制一个list出来
 
 
 
