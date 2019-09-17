@@ -39,7 +39,7 @@ for i in range(start_index, len(nums)):
     self.dfs(nums, i + 1, subset + [num[i]], results
 
 ```
-这样还不用pop()，因为subset的值并没有改变，而是产生了一个新的subset往下传递
+这样还不用pop()，因为subset的值并没有改变，而是产生了一个新的list往下传递
 
 
 
