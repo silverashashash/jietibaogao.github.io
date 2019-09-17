@@ -33,4 +33,5 @@ class Solution:
 ####注意：
 - list(subsets) 为什么要加list
 这里牵扯到一个copy问题，如果不加list，那么copy的就是subset的reference，因此list之后的改变都会导致之前加入值的改变，加上list()之后就是建立了一个当前subset的copy，之后无论list如何改变，就不变了
+ - 这一步叫deepcopy
 
