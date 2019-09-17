@@ -1,5 +1,6 @@
 ## Subsets 递归方式 （组合类）combination
-
+关键字：所有方案
+解决办法：DFS
 
 
 ```py
