@@ -31,6 +31,18 @@ class Solution:
             subset.pop()
 ```
 
+- python还可以用一行代码解决for循环里的内容：
+
+
+```py
+for i in range(start_index, len(nums)):
+    self.dfs(nums, i + 1, subset + [num[i]], results
+
+```
+这样还不用pop()，因为subset的值并没有改变，而是产生了一个新的subset往下传递
+
+
+
 ####九章答案里有个四种解法的
 
 提供4种python做法：
