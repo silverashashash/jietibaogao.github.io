@@ -120,4 +120,5 @@
   * [随课教程](chapter-5-combination-based-dfs-and-memoization-search/sui-ke-jiao-cheng.md)
     * [subsets 全子集递归方式（组合类）](chapter-5-combination-based-dfs-and-memoization-search/sui-ke-jiao-cheng/subset.md)
     * [subsets 可以拓展到排列类搜索的递归方式](chapter-5-combination-based-dfs-and-memoization-search/sui-ke-jiao-cheng/subsets-quan-zi-ji-pai-lie-lei-di-gui.md)
+    * [subsets II](chapter-5-combination-based-dfs-and-memoization-search/sui-ke-jiao-cheng/subsets-ii.md)
 
