@@ -43,16 +43,17 @@ class Solution:
         if s == "":
             results.append(list(path))
         for i in range(len(s)):
-            if len(s) < i + 1:
-                break
+   #         if len(s) < i + 1:
+   #             break
             if self.is_palindrome(s[:i + 1]): 
                 path.append(s[:i + 1]) 
                 self.helper(s[i + 1:], path, results)
                 path.pop()
     
     def is_palindrome(self, s):
-        return s == s[::-1]
-        
+        return s == s[::-1]      
 
 ```
+
+
 
