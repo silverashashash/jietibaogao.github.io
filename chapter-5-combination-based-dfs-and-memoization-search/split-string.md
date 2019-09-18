@@ -15,4 +15,44 @@ Give a string, you can choose to split the string after one character or two adj
 
 
 
+```py
+
+#看了思路之后自己的答案
+class Solution:
+    """
+    @param: : a string to be split
+    @return: all possible split string array
+    """
+
+    def splitString(self, s):
+        # write your code here
+        if s is None:
+            return []
+        if len(s) == 0:
+            return [[]]
+            
+        results = []
+        self.dfs(s, [], results)
+        return results
+        
+    def dfs(self, s, substrings, results):
+        if len(s) == 0:
+            results.append(list(substrings))
+            return 
+            
+        for i in range(2):
+            if i + 1 > len(s):
+                break
+            substrings.append(s[:i+1])
+            
+            self.dfs(s[i+1:], substrings, results)
+            substrings.pop()
+            
+            
+        
+
+```
+
+
+
 
