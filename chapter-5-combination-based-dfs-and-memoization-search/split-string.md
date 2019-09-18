@@ -46,12 +46,12 @@ class Solution:
             substrings.append(s[:i+1])
             
             self.dfs(s[i+1:], substrings, results)
-            substrings.pop()
-            
-            
-        
+            substrings.pop(） 
 
 ```
+
+- 之前没想到的地方是，for循环里只要in range(2)就行了
+- python里取字符串的技巧
 
 
 
