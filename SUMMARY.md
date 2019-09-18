@@ -122,10 +122,13 @@
     * [subsets 可以拓展到排列类搜索的递归方式](chapter-5-combination-based-dfs-and-memoization-search/sui-ke-jiao-cheng/subsets-quan-zi-ji-pai-lie-lei-di-gui.md)
     * [subsets II](chapter-5-combination-based-dfs-and-memoization-search/sui-ke-jiao-cheng/subsets-ii.md)
   * [通用的DFS时间复杂度计算通用公式](chapter-5-combination-based-dfs-and-memoization-search/sou-suo-ff0c-dong-tai-gui-hua-ff0c-er-cha-shu-de-shi-jian-fu-za-du-ji-suan-tong-yong-gong-shi.md)
-  * [组合搜索问题](chapter-5-combination-based-dfs-and-memoization-search/zu-he-sou-suo-wen-ti.md)
+  * [组合搜索问题（Combination Search）](chapter-5-combination-based-dfs-and-memoization-search/zu-he-sou-suo-wen-ti.md)
     * [Combination Sum](chapter-5-combination-based-dfs-and-memoization-search/combination-sum.md)
     * [k sum II](chapter-5-combination-based-dfs-and-memoization-search/k-sum-ii.md)
     * [Split String](chapter-5-combination-based-dfs-and-memoization-search/split-string.md)
     * [Palindrome Partition](chapter-5-combination-based-dfs-and-memoization-search/palindrome-partition.md)
-  * 记忆化搜索
+  * [记忆化搜索（Memoization Search）](chapter-5-combination-based-dfs-and-memoization-search/ji-yi-hua-sou-suo.md)
+    * [Wildcard Matching](chapter-5-combination-based-dfs-and-memoization-search/ji-yi-hua-sou-suo/wildcard-matching.md)
+      * Regular Expression Matching
+    * Word Break II
 
