@@ -1,6 +1,7 @@
 ## Palindrome Partition
 #### 字符串切割类
 http://www.lintcode.com/problem/palindrome-partitioning/
+https://leetcode.com/problems/palindrome-partitioning/
 
 python 取字符串的技巧
 ```py

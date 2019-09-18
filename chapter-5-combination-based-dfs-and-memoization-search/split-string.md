@@ -56,3 +56,28 @@ class Solution:
 
 
 
+```py
+#九章里比较好的答案
+#DFS: 构建一个dfs 辅助函数， 分别传入最终结果，中间变量path, 和字符串s，每次切割一个或者两个字母放入path，当切到字符串结尾就返回。
+class Solution:
+    def splitString(self, s):
+        result = []
+        self.dfs(result, [], s)
+        return result 
+    
+    def dfs(self, result, path, s):
+        if s == "":
+            result.append(path[:]) #important: use path[:] to clone it
+            return 
+        for i in range(2):
+            if i+1 <= len(s):
+                path.append(s[:i+1])
+                self.dfs(result, path, s[i+1:])
+                path.pop()
+```
+
+
+
+
+
+
