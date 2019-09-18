@@ -108,6 +108,7 @@ class Solution:
 
 
 - `dfs()`函数原本$$O(n)$$，现在变$$O(1)$$
+- 优化后时间复杂度$$O(n^2\times 2^n)$$ 变为 $$O(n\times 2^n)$$
 
 
 
