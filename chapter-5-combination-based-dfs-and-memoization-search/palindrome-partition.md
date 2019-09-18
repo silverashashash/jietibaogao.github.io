@@ -18,3 +18,43 @@ s[::-1] 字符串翻转
     - 因此可以在 $$O(n^2)$$ 时间复杂度和 $$O(n^2)$$ 的空间复杂度内求出任意一个`substring`是否是回文串
 - 回文串分割的整体时间复杂度是 $$O(2^n \times n)$$ 量级，因为n个字符串有`n-1`个位置可以切割，每个方案要花费`n`的时间。 因此优化是有用的。
 - 一个字符串的 substring（字串） 有 $$n^2$$ 个，subsequence（子序列） 有 $$2^n$4 个
+
+
+
+```py
+#没用记忆化搜索，自己的答案
+class Solution:
+    """
+    @param: s: A string
+    @return: A list of lists of string
+    """
+    def partition(self, s):
+        # write your code here
+        if s is None:
+            return []
+        if len(s) == 0:
+            return [[]]
+        path = []
+        results = []
+        self.helper(s, path, results)
+        return results
+    
+    def helper(self, s, path, results):
+        if s == "":
+            results.append(list(path))
+    
+            
+        for i in range(len(s)):
+            if len(s) < i + 1:
+                break
+            if self.is_palindrome(s[:i + 1]): 
+                path.append(s[:i + 1]) 
+                self.helper(s[i + 1:], path, results)
+                path.pop()
+    
+    def is_palindrome(self, s):
+        return s == s[::-1]
+        
+
+```
+
