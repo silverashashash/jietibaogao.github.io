@@ -121,7 +121,7 @@
     * [subsets 全子集递归方式（组合类）](chapter-5-combination-based-dfs-and-memoization-search/sui-ke-jiao-cheng/subset.md)
     * [subsets 可以拓展到排列类搜索的递归方式](chapter-5-combination-based-dfs-and-memoization-search/sui-ke-jiao-cheng/subsets-quan-zi-ji-pai-lie-lei-di-gui.md)
     * [subsets II](chapter-5-combination-based-dfs-and-memoization-search/sui-ke-jiao-cheng/subsets-ii.md)
-  * [搜索，动态规划，二叉树的时间复杂度计算通用公式](chapter-5-combination-based-dfs-and-memoization-search/sou-suo-ff0c-dong-tai-gui-hua-ff0c-er-cha-shu-de-shi-jian-fu-za-du-ji-suan-tong-yong-gong-shi.md)
+  * [通用的DFS时间复杂度计算通用公式](chapter-5-combination-based-dfs-and-memoization-search/sou-suo-ff0c-dong-tai-gui-hua-ff0c-er-cha-shu-de-shi-jian-fu-za-du-ji-suan-tong-yong-gong-shi.md)
   * [组合搜索问题](chapter-5-combination-based-dfs-and-memoization-search/zu-he-sou-suo-wen-ti.md)
     * [Combination Sum](chapter-5-combination-based-dfs-and-memoization-search/combination-sum.md)
     * [k sum II](chapter-5-combination-based-dfs-and-memoization-search/k-sum-ii.md)
