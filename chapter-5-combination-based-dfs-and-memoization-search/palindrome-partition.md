@@ -42,8 +42,6 @@ class Solution:
     def helper(self, s, path, results):
         if s == "":
             results.append(list(path))
-    
-            
         for i in range(len(s)):
             if len(s) < i + 1:
                 break
