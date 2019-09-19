@@ -116,13 +116,14 @@ class Solution:
 # 课堂上说的方法：
 def get_is_palindrome(self, memo,  s, i, j):
     if i == j:
-    return True
+        return True
     if i + 1 == j:
-    return s[i] == s[j]
+        return s[i] == s[j]
     
     if (i,j) in memo:
         return memo[(i,j)]
-    memo[(i, j)] = s[i] == s[j] and self.get_is_palindrome(memo, s, i + 1, j + 1)
+    
+    memo[(i, j)] = s[i] == s[j] and self.get_is_palindrome(memo, s, i + 1, j - 1)
     return memo[(i, j)]
     
 
