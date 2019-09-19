@@ -125,8 +125,6 @@ def get_is_palindrome(self, memo,  s, i, j):
     
     memo[(i, j)] = s[i] == s[j] and self.get_is_palindrome(memo, s, i + 1, j - 1)
     return memo[(i, j)]
-    
-
 ```
 
 

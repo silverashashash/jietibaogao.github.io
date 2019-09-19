@@ -130,6 +130,6 @@
     * [Palindrome Partition](chapter-5-combination-based-dfs-and-memoization-search/palindrome-partition.md)
   * [记忆化搜索（Memoization Search）](chapter-5-combination-based-dfs-and-memoization-search/ji-yi-hua-sou-suo.md)
     * [Wildcard Matching](chapter-5-combination-based-dfs-and-memoization-search/ji-yi-hua-sou-suo/wildcard-matching.md)
-      * Regular Expression Matching
+      * [Regular Expression Matching](chapter-5-combination-based-dfs-and-memoization-search/ji-yi-hua-sou-suo/wildcard-matching/regular-expression-matching.md)
     * Word Break II
 
