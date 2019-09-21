@@ -61,7 +61,49 @@ class Solution:
 
 ```py
 #看了答案之后的解答
+class Solution:
+    """
+    @param: s: A string
+    @param: wordDict: A set of words.
+    @return: All possible sentences.
+    """
+    def wordBreak(self, s, wordDict):
+        # write your code here
+        if s is None or wordDict is None:
+            return []
+        
+        return self.helper(s, wordDict, {})
+    
+    def helper(self, s, wordDict, memo):
+        if len(s) == 0:
+            return []
+        
+        results = []
+        
+        if s in memo:
+            return memo[s]
+            
+        if s in wordDict:
+            results.append(s)
+        
+        for i in range(1, len(s) + 1):
+            if s[:i]  not in wordDict:
+                continue
+            
+            segments = self.helper(s[i:], wordDict, memo)
+            
+            for sg in segments:
+                results.append(s[:i] + ' ' + sg)
+        
+        memo[s] = results
+        
+        return results
+```
 
+- 这个答案必须要额外处理：
+```
+    # if s in wordDict:
+    #     partitions.append(s)
 ```
 
 
