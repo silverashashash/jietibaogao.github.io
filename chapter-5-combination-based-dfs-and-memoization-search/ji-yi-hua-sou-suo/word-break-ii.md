@@ -24,3 +24,41 @@ Explanation：dict is null.
 
 
 
+
+
+```py
+#超时的答案：
+class Solution:
+    """
+    @param: s: A string
+    @param: wordDict: A set of words.
+    @return: All possible sentences.
+    """
+    def wordBreak(self, s, wordDict):
+        # write your code here
+        if not wordDict or not s:
+            return []
+        
+        results = []
+        self.helper(s, wordDict, [], results)
+        
+        return results
+    
+    def helper(self, s, wordDict, word, results):
+        if len(s) == 0:
+            results.append(' '.join(word) ) 
+            return 
+        
+        for i in range(1, len(s) + 1):
+            if s[:i] not in wordDict:
+                continue
+            word.append(s[:i])
+            self.helper(s[i:], wordDict, word, results)
+            word.pop()
+        
+            
+
+```
+
+
+
