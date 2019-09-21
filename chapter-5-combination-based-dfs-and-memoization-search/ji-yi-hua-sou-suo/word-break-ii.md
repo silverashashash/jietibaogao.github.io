@@ -55,8 +55,6 @@ class Solution:
             word.append(s[:i])
             self.helper(s[i:], wordDict, word, results)
             word.pop()
-        
-            
 
 ```
 

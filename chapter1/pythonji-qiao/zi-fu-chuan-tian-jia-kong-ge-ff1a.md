@@ -14,6 +14,7 @@ insert a space is "lint code"，insert two spaces is "lint co de".
 results.append(' '.join(word) ) 
 
 ```
+效果是把每个 element 之间加空格
 
 
 
