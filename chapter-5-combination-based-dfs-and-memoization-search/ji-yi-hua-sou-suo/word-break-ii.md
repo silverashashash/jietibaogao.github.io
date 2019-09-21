@@ -46,7 +46,7 @@ class Solution:
     
     def helper(self, s, wordDict, words, results):
         if len(s) == 0:
-            results.append(' '.join(word) ) 
+            results.append(' '.join(words) ) 
             return 
         
         for i in range(1, len(s) + 1):
