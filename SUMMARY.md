@@ -133,4 +133,5 @@
     * [Wildcard Matching](chapter-5-combination-based-dfs-and-memoization-search/ji-yi-hua-sou-suo/wildcard-matching.md)
       * [Regular Expression Matching](chapter-5-combination-based-dfs-and-memoization-search/ji-yi-hua-sou-suo/wildcard-matching/regular-expression-matching.md)
     * [Word Break II](chapter-5-combination-based-dfs-and-memoization-search/ji-yi-hua-sou-suo/word-break-ii.md)
+* [Chapter 6 Permutation-based & Graph-based DFS](chapter-6-permutation-based-and-graph-based-dfs.md)
 
