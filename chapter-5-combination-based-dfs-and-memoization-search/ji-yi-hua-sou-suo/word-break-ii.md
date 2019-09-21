@@ -101,6 +101,34 @@ class Solution:
 
 ```py
 #另一种不需要额外处理的答案
+class Solution:
+    def wordBreak(self, s: str, wordDict: List[str]) -> List[str]:
+        return self.helper(s, wordDict, {})
+    
+    def helper(self, s, wordDict, memo):
+        if not s:
+            return [""]
+        if s in memo:
+            return memo[s]
+        
+        results = []
+        
+        for i in range(1, len(s) + 1):
+            if s[:i] not in wordDict:
+                continue 
+            
+            segments = self.helper(s[i:], wordDict, memo)
+            
+            for sg in segments:
+                if sg:
+                    results.append(s[:i] + ' ' + sg)
+                else:
+                    results.append(s)
+            
+        memo[s] = results
+        
+        return results
+        
 ```
 
 * 对比一下就明白为什么需要做那个额外处理
