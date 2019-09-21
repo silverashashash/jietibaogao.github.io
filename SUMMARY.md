@@ -10,6 +10,7 @@
     * [list和string之间转换](chapter1/pythonji-qiao/listhe-string-zhi-jian-zhuan-huan.md)
     * [import module 的一些使用方法](chapter1/pythonji-qiao/import-module-de-yi-xie-shi-yong-fang-fa.md)
     * [截取字符串](chapter1/pythonji-qiao/jie-qu-zi-fu-chuan.md)
+    * [字符串添加空格：](chapter1/pythonji-qiao/zi-fu-chuan-tian-jia-kong-ge-ff1a.md)
 * [Chapter1-Binary Search](chapter1-binary-search.md)
 * [Chapter2-Two Pointers](chapter2-two-pointers.md)
   * [Valid Palindrome](chapter2-two-pointers/valid-palindrome.md)
