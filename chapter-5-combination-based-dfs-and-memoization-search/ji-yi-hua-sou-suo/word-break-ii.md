@@ -44,7 +44,7 @@ class Solution:
         
         return results
     
-    def helper(self, s, wordDict, word, results):
+    def helper(self, s, wordDict, words, results):
         if len(s) == 0:
             results.append(' '.join(word) ) 
             return 
@@ -52,9 +52,9 @@ class Solution:
         for i in range(1, len(s) + 1):
             if s[:i] not in wordDict:
                 continue
-            word.append(s[:i])
-            self.helper(s[i:], wordDict, word, results)
-            word.pop()
+            words.append(s[:i])
+            self.helper(s[i:], wordDict, words, results)
+            words.pop()
 
 ```
 
