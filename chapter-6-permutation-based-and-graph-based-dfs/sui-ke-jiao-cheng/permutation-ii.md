@@ -1,2 +1,6 @@
 ## Permutation II
-https://leetcode.com/problems/permutations/
+
+[https://www.lintcode.com/problem/permutations-ii](https://www.lintcode.com/problem/permutations-ii/description)/
+
+[https://leetcode.com/problems/permutations-ii/](https://leetcode.com/problems/permutations-ii/)
+
