@@ -24,4 +24,41 @@ class Solution:
             self.helper(nums, permutation, results)
             permutation.pop()        
 ```
-- 视频教程里用visited[]数组记录访问过的下标，但是visited传入递归函数容易出错
+
+#### 或者学java用一个visited[]数组记录访问过的下标
+
+```py
+class Solution:
+    """
+    @param: nums: A list of integers.
+    @return: A list of permutations.
+    """
+    def permute(self, nums):
+        # write your code here
+        results = []
+        if not nums:
+            return results
+        permutation = []
+        visited = [False for i in range(len(nums))]
+        self.dfs(nums, permutation, results, visited)
+        return results
+
+    def dfs(self, nums, permutation, results, visited):
+
+          if len(nums) == len(permutation):
+            results.append(list(permutation))
+            return 
+
+          for i in range(len(nums)):
+            if visited[i]:
+                 continue
+            permutation.append(nums[i])
+            visited[i] = True
+            self.dfs(nums, permutation, results, visited)
+            visited[i] = False
+            permutation.pop()
+
+
+```
+
+
