@@ -1,6 +1,6 @@
 ## Permutation 
-
-
+https://www.lintcode.com/problem/permutations/
+https://leetcode.com/problems/permutations/
 
 ```py
 #根据上一章的Combination模板

@@ -136,5 +136,5 @@
 * [Chapter 6 Permutation-based & Graph-based DFS](chapter-6-permutation-based-and-graph-based-dfs.md)
   * [随课教程](chapter-6-permutation-based-and-graph-based-dfs/sui-ke-jiao-cheng.md)
     * [permutation](chapter-6-permutation-based-and-graph-based-dfs/sui-ke-jiao-cheng/permutation.md)
-    * permutation II
+    * [permutation II](chapter-6-permutation-based-and-graph-based-dfs/sui-ke-jiao-cheng/permutation-ii.md)
 
