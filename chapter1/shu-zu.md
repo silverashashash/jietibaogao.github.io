@@ -22,5 +22,6 @@ self.isPalindrome = [[0]*size for i in range(size)]
 [False, False, False]
 >>> visited = [0 for i in range(len(nums))]
 >>> visited
+>>> [0, 0, 0]
 ```
 
