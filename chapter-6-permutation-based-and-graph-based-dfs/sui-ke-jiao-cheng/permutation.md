@@ -22,9 +22,6 @@ class Solution:
                 continue
             permutation.append(nums[i])
             self.helper(nums, permutation, results)
-            permutation.pop()
-            
-            
-        
+            permutation.pop()        
 ```
-
+- 视频教程里用visited[]数组记录访问过的下标，但是visited传入递归函数容易出错
