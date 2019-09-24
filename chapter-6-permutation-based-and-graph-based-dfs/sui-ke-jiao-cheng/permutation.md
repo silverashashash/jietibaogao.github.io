@@ -1,7 +1,7 @@
 ## Permutation 
 https://www.lintcode.com/problem/permutations/
 https://leetcode.com/problems/permutations/
-无重复数的排列
+无重复元素的排列
 ```py
 #根据上一章的Combination模板
 class Solution:
