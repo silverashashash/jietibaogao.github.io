@@ -137,4 +137,9 @@
   * [随课教程](chapter-6-permutation-based-and-graph-based-dfs/sui-ke-jiao-cheng.md)
     * [permutation](chapter-6-permutation-based-and-graph-based-dfs/sui-ke-jiao-cheng/permutation.md)
     * [permutation II](chapter-6-permutation-based-and-graph-based-dfs/sui-ke-jiao-cheng/permutation-ii.md)
+  * [排列式搜索](chapter-6-permutation-based-and-graph-based-dfs/pai-lie-shi-sou-suo.md)
+    * [String Permutation II](chapter-6-permutation-based-and-graph-based-dfs/pai-lie-shi-sou-suo/string-permutation-ii.md)
+    * [N Queens ](chapter-6-permutation-based-and-graph-based-dfs/pai-lie-shi-sou-suo/n-queens.md)
+  * 隐式图，矩阵图搜索
+  * Word 四兄弟
 
