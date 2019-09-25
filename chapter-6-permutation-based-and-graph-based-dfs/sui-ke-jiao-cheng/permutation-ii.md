@@ -23,12 +23,12 @@ class Solution:
         nums = sorted(nums)
         self.helper(nums, [], visited, results)
         return results
-    
+
     def helper(self, nums, permutation, visited, results):
         if len(nums) == len(permutation):
             results.append(list(permutation))
             return
-        
+
         for i in range(len(nums)):
             if i > 0 and nums[i] == nums[i - 1] and visited[i - 1] == 0:
                 continue
@@ -40,6 +40,9 @@ class Solution:
             permutation.pop()
             visited[i] = 0
 ```
+
+* 这道题必须用visited记录而不是简单的用in了
+* 去重的时候也要看上一个是不是已访问的元素。
 
 
 
