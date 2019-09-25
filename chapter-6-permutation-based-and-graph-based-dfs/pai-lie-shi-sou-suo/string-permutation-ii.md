@@ -1,6 +1,6 @@
 ## String Permutation II 
 www.lintcode.com/problem/string-permutation-ii
-跟之前的一样，注意append results用的形式
+跟之前的一样，注意append results用的形式（去掉）
 
 
 ```py
@@ -24,6 +24,7 @@ class Solution:
     def dfs(self, str, results, permutation, visited):
         if len(permutation) == len(str):
             results.append(''.join(permutation))
+            # results.append(list(permutation)) 
             return 
         
         for i in range(len(str)):
@@ -36,6 +37,8 @@ class Solution:
             self.dfs(str, results, permutation, visited)
             permutation.pop()
             visited[i] = False
+            
+
             
 
 
