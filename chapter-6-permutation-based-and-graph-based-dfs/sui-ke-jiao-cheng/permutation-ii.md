@@ -30,9 +30,9 @@ class Solution:
             return
 
         for i in range(len(nums)):
-            if i > 0 and nums[i] == nums[i - 1] and visited[i - 1] == 0:
+            if i > 0 and nums[i] == nums[i - 1] and visited[i - 1] == 0: # 不要把前面跟自己一样的放进去
                 continue
-            if visited[i] == 1:
+            if visited[i] == 1: # 不要把自己放进去
                 continue
             permutation.append(nums[i])
             visited[i] = 1
@@ -43,8 +43,6 @@ class Solution:
 
 * 这道题必须用visited记录而不是简单的用in了
 * 去重的时候也要看上一个是不是已访问的元素。
-
-
 
 ```py
 #九章答案
