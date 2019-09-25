@@ -1,7 +1,7 @@
-## String Permutation II 
-www.lintcode.com/problem/string-permutation-ii
-跟之前的一样，注意append results用的形式（去掉）
+## String Permutation II
 
+www.lintcode.com/problem/string-permutation-ii  
+跟之前的一样，注意append results用的形式（去掉）
 
 ```py
 class Solution:
@@ -13,22 +13,23 @@ class Solution:
         # write your code here
         if not str:
             return [[]]
-            
+
         results = []
         permutation = []
         visited = [False] * len(str)
-        
+
         self.dfs(str, results, permutation, visited)
         return results
-        
+
     def dfs(self, str, results, permutation, visited):
         if len(permutation) == len(str):
             results.append(''.join(permutation))
+            # 输出的是["abb","bab","bba"]
             # results.append(list(permutation))
             # 输出的是 [["a","b","b"],["b","a","b"],["b","b","a"]]
 
             return 
-        
+
         for i in range(len(str)):
             if visited[i] == True:
                 continue
@@ -39,10 +40,7 @@ class Solution:
             self.dfs(str, results, permutation, visited)
             permutation.pop()
             visited[i] = False
-            
-
-            
-
-
 ```
+
+
 
