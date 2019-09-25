@@ -1,2 +1,15 @@
-##基于排列、图的深度优先搜索  Permutation-Based & Graph-Based DFS
+## 基于排列、图的深度优先搜索  Permutation-Based & Graph-Based DFS
+
+
+####随课教程
+- 如何用DFS解决去全排列问题
+- 有重全排列问题如何去重
+- 下一个排列怎么求
+
+####课程大纲
+- 排列式搜索
+- 隐式图，矩阵图搜索
+- Word 四兄弟问题
+
+
 
