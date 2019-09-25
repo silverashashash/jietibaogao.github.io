@@ -11,8 +11,8 @@ class Solution:
     """
     def stringPermutation2(self, str):
         # write your code here
-        if not str:
-            return [[]]
+        # if not str:
+        #     return [[]]
 
         results = []
         permutation = []
@@ -33,7 +33,7 @@ class Solution:
         for i in range(len(str)):
             if visited[i] == True:
                 continue
-            if i > 0 and str[i] == str[i - 1] and visited[i - 1]:
+            if i > 0 and str[i] == str[i - 1] and  not visited[i - 1]:
                 continue
             permutation.append(str[i])
             visited[i] = True
