@@ -24,7 +24,9 @@ class Solution:
     def dfs(self, str, results, permutation, visited):
         if len(permutation) == len(str):
             results.append(''.join(permutation))
-            # results.append(list(permutation)) 
+            # results.append(list(permutation))
+            # 输出的是 [["a","b","b"],["b","a","b"],["b","b","a"]]
+
             return 
         
         for i in range(len(str)):
