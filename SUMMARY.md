@@ -149,4 +149,5 @@
       * [Follow up](chapter-6-permutation-based-and-graph-based-dfs/pai-lie-shi-sou-suo/letter-combinations-of-phone-number/follow-up.md)
   * [隐式图，矩阵图搜索](chapter-6-permutation-based-and-graph-based-dfs/yin-shi-tu-ff0c-ju-zhen-tu-sou-suo.md)
   * [Word 四兄弟](chapter-6-permutation-based-and-graph-based-dfs/word-si-xiong-di.md)
+    * [Word Pattern II](chapter-6-permutation-based-and-graph-based-dfs/word-si-xiong-di/word-pattern-ii.md)
 
