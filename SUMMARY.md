@@ -141,6 +141,8 @@
     * [String Permutation II](chapter-6-permutation-based-and-graph-based-dfs/pai-lie-shi-sou-suo/string-permutation-ii.md)
     * [N Queens ](chapter-6-permutation-based-and-graph-based-dfs/pai-lie-shi-sou-suo/n-queens.md)
       * [N Queens II](chapter-6-permutation-based-and-graph-based-dfs/pai-lie-shi-sou-suo/n-queens/n-queens-ii.md)
+    * [Next Permutation ](chapter-6-permutation-based-and-graph-based-dfs/pai-lie-shi-sou-suo/next-permutation.md)
+      * [Next Permutation II ](chapter-6-permutation-based-and-graph-based-dfs/pai-lie-shi-sou-suo/next-permutation/next-permutation-ii.md)
   * 隐式图，矩阵图搜索
   * Word 四兄弟
 
