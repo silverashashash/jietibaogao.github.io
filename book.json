@@ -1,12 +1,6 @@
 {
-    "plugins": ["katex","livereload","-highlight"
-    	// ,"sunlight-highlighter"
-    ],
-    "pluginsConfig": {
-    	"sunlight-highlighter": {
-    		"theme": "light",
-    		"lineNumbers": false
-    	}
+    "plugins": ["katex","livereload","-highlight"],
+
     }
 
 }
