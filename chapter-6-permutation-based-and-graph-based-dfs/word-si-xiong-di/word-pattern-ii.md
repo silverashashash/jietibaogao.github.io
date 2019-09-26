@@ -37,4 +37,29 @@ A -B  |    |  G
            J
 
 ```
+####最终的方案：
+- 从end到start做一次BFS，并且吧距离end的距离都保存在distance中
+- 然后再从start到end做一次DFS，每一步必须确保离end的distance越来越近
+- 这里寻找下一个变换单词的方法是建立index，即，如果有一个单词abc，分别去掉第1，2，3个字符之后，把abc这个单词分别扔进%bc，a%c，ab%这三个不同的key的hash里，hash里的key是去掉一个字符之后的pattern，value是一个set，保存满足这个pattern的所有单词。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
