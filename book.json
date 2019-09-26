@@ -3,7 +3,7 @@
     "pluginsConfig": {
     	"sunlight-highlighter": {
     		"theme": "light",
-    		"lineNumbers": true
+    		"lineNumbers": false
     	}
     }
 
