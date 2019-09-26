@@ -10,3 +10,15 @@ http://www.lintcode.com/problem/word-pattern-ii/
 
 - 之前学过求所有路径用DFS，求最短路径用BFS。本题求的是所有最短路径，因此用BFS+DFS
 - 如果只用DFS求所有路径，并不断更新最短路径，需要$$O(n!)$$
+- 考虑下面的图
+
+
+```
+      C----F
+    / |    | \
+A -B  |    |  G
+    \ |    | /
+      D----E
+
+```
+
