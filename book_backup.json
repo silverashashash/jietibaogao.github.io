@@ -1,0 +1,13 @@
+{
+    "plugins": ["katex","livereload","-highlight","sunlight-highlighter"],
+    "pluginsConfig": {
+        "sunlight-highlighter": {
+            "theme": "light",
+            "lineNumbers": false
+        }
+    }
+
+}
+
+// 编译pdf的样式很难看
+
