@@ -14,3 +14,55 @@ n个皇后放在n*n的棋盘上，每个皇后不能在同一列、同一行、�
 
 
 
+####实现的问题
+- output如何去实现？
+
+
+```py
+#竟然一遍就AC了，虽然是先看了教程，有了大概的思路
+class Solution:
+    """
+    @param: n: The number of queens
+    @return: All distinct solutions
+    """
+    def solveNQueens(self, n):
+        # write your code here
+        if n <= 0:
+            return []
+        results = []
+        self.dfs(n, 0, [], [], results)
+        return results
+    
+    def dfs(self, n, i, list_of_coord,  matrix, results):
+        if len(matrix) == n:
+            results.append(list(matrix))
+            return 
+        
+        for j in range(n):
+            coord_ = (i, j)
+            if not self.is_valid(coord_, list_of_coord):
+                continue
+            
+            array = self.make_array(n, coord_)
+            list_of_coord.append(coord_)
+            matrix.append(array)
+            self.dfs(n, i + 1, list_of_coord, matrix, results)
+            matrix.pop()
+            list_of_coord.pop()
+        
+    def make_array(self, n, coord):
+        array = ["."] * n
+        array[coord[1]] = "Q"
+        array = "".join(array)
+        return array
+    
+    def is_valid(self, coord_new, list_of_coord):
+        for coord_old in list_of_coord:
+            if coord_new[0] == coord_old[0] or coord_new[1] == coord_old[1]:
+                return False
+            if coord_new[0] + coord_new[1] == coord_old[0] + coord_old[1] or coord_new[0] - coord_new[1] == coord_old[0] - coord_old[1]:
+                return False
+        return True
+```
+- Your submission beats 5.00% Submissions! 有没有优化的空间？
+
