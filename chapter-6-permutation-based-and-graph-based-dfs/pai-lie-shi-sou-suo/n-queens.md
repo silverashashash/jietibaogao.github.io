@@ -65,7 +65,7 @@ class Solution:
         return True
 ```
 - Your submission beats 5.00% Submissions! 有没有优化的空间？
-
+- lintcode 有视频解答
 
 
 
@@ -110,5 +110,8 @@ class Solution:
                 return False
         return True
 ```
+
+
+
 
 
