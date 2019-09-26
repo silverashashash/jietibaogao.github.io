@@ -1,7 +1,5 @@
 {
-    "plugins": ["katex","livereload","-highlight"],
-
-    
+    "plugins": ["katex","livereload","-highlight"]
 
 }
 
