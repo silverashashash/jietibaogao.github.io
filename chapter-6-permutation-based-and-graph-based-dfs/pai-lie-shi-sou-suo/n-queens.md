@@ -66,3 +66,49 @@ class Solution:
 ```
 - Your submission beats 5.00% Submissions! 有没有优化的空间？
 
+
+
+
+```py
+#九章一个差不多的方法，注意老师用的语法 enumerate() 函数等
+class Solution:
+    """
+    @param: n: The number of queens
+    @return: All distinct solutions
+    """
+    def solveNQueens(self, n):
+        results = []
+        self.search(n, [], results)
+        return results
+        
+    def search(self, n, cols, results):
+        row = len(cols)
+        if row == n:
+            results.append(self.draw_chessboard(cols))
+            return
+
+        for col in range(n):
+            if not self.is_valid(cols, row, col):
+                continue
+            cols.append(col)
+            self.search(n, cols, results)
+            cols.pop()
+            
+    def draw_chessboard(self, cols):
+        n = len(cols)
+        board = []
+        for i in range(n):
+            row = ['Q' if j == cols[i] else '.' for j in range(n)]
+            board.append(''.join(row))
+        return board
+        
+    def is_valid(self, cols, row, col):
+        for r, c in enumerate(cols):
+            if c == col:
+                return False
+            if r - c == row - col or r + c == row + col:
+                return False
+        return True
+```
+
+
