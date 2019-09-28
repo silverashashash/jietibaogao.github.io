@@ -52,13 +52,5 @@ class Solution:
                 combination.append(char_list[j])
                 self.dfs(digits[i+1:], KEYBOARD, results, combination, n)
                 combination.pop()
-                
-        
-        
-        
-
-        
-        
-
 ```
 
