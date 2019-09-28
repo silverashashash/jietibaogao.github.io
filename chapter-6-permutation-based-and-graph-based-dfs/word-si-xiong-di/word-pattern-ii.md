@@ -8,7 +8,7 @@ http://www.lintcode.com/problem/word-pattern-ii/
         - 需要把经过哪些点作为一个key存在哈希表里。不能用set作为key，因为set存的是内存地址，因此调用的时候比较的是内存地址而不是值。应该变成binary，作为一个只有0和1的整数存在哈希表的key里。比如1234中，1和3访问过，key就是1010。这种方法叫做状态压缩（state compression或者binary compression）。20的范围以内都可以用状态压缩。在$$2^n \times n$$的范围内进行BFS
         - 注意状态压缩和bit array不是一回事
         
-- mapping里存的key:value 中，key是字符，value是单词
+- mapping里存的`key:value`中，key是字符，value是单词
 
 
 
